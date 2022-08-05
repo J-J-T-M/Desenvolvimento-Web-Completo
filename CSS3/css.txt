@@ -1,0 +1,67 @@
+﻿existre tres tipos de formatação css 
+°inline style que a formatação na linha exemplo 
+°internal style que a formatação no codigo fica no heard 
+°external style que é uma formatação que fica em um arquivo fora do codigo
+
+<p style="color:red;"> deixa a cor em vermelho
+ color: cor; para mudar a cor 
+
+
+id usar somente uma unica ves 
+classes usar mais de uma unica vez 
+padding:10px; para criar um espaçamento 
+
+font-size para mudaR O TANHO DO TEXTO PODE SER EM PIXEL,% E EM REFERENTE tamanho relativo ao container pai
+FONT-FAMILY PA4RA MUDAR O ESTILO DA FONTE EXEMPLO: "TIMES NEW ROMAN" , TIMES , SERIF
+FONT-WEIGHT PARA MUDAR O PESO DO TEXTO PODE SER NORMAL DEIXAR O TEXTO NORMAL , BOLD DEIXA O TEXTO EM NEGRITO, OU PODE COLOCAR VALORES NUMERICOS DE 100 A 900
+font-style: italic; para deixar o texto em italico
+text-decoration: underline; deixar uma linha embaixo do texto
+text-decoration: overline; deixar uma linha emcima do texto
+text-decoration: line-through; deixa a linho no meio do texto
+background-image: url('caminho da imagens');
+background-repeat: repeat; para a imagem repitir ja vem como padrão no-repeat não repete 
+background-attachment: fixed; para deixar a imagem fixa
+background-attachment: scroll; para a imagem não ficar fixa
+background-position:  center center; parar definir o local onde minha imagem vai ficar  left center right *//*top center bottom*/
+padding: VALORpx; para criar um espaçamento interno 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+﻿padding: VALORpx; para criar um espaçamento interno 
+margin: VALORpx; para criar um espaçamento externo
+float: right(left); para deixar o conteudo flutuando 
+clear: left(right,both nome);
+display: inline (altera o comportamento sabendo de tem o formato block ex h1 e o formato inline ex a);
+z-index para definir qual exibiçao mostra primeiro contexto de empilhamento
+/*links não visitados*/
+        a:link{
+            color: #b9c941;
+        }
+/*links visitados*/
+        a:visited{
+            color: #c0c0c0;
+        }
+/*Links Hover, passa o cursor sobre o link */
+        a:hover{
+            color: #bd3500;
+        }
+/*Links Ativos, quando clicado */
+        a:active{
+            color: #e4f371;
+        }
+/*Limpar as formatações padroes  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

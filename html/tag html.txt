@@ -1,0 +1,78 @@
+<?> </?> isso se chama uma tag 
+<b> palavra </b> essa tag é para deixar a palavra em negrito
+<!doctype> é a tag para a gente informar que tipo de documento por exemplo <!doctype html>
+<heard> é a cabeça do codigo onde fica as coisa que nao mostra na pagina tipo o codigo javascript ou php
+<body> é o corpo onde fica tudo o que mostra na pagina 
+<title> onde fica o titulo da pagina ou guia
+<meta charset="utf-8"> para colocar o padrao utf-8 que coloca acentuação nas palavras 
+tag d cabeçario 
+<h1ah6> titulos</h1ah6>
+<br> pular linha
+<p> paragrafo </p>
+<hr> linha horizontal
+<strong> recomentaçao para deixar o texto em negrito</strong>
+<i> deixar o texto em italico </i>
+<em> recomentação para deixar o texto em italico </em>
+<u> deixar o texto em underline</u>
+<strike> deixar o texto errado</strike>
+<ul> criar uma lista não ordenada</ul>
+<li> é para criar os intens da lista </li>
+type de marcadores circle, square, disc
+<ol> criar uma lista ordenada</ol>
+<img> src"caminho ou site da imagem</img>
+<a href="segunda pagina.html ou qualquer link"> Qualquer mensage</a>
+<table>criar tabela porem tem que criar os dados e linha    </table>
+<tr> criar a linha na tabela</tr>
+<td> criar os dados na tabela</td>
+<th>criar os titulos dos dados </th>
+<td colspan="tamanho" >informação(mesclar coluna)</td>
+<td rowspan="tamanho" >informação(mesclar linha)</td>
+<form > criar formulario</form>
+<input type="text" name="" receber um input porem tem que definir o type como texto passoword ou outros tipos e name para como vai recuperar depois o arquivo>
+<input type="radio" name="" value="" receber um input exemplo marcar a caixa de masculino ou feminino porem tem que deixar o nome o mesmo para poder marcar somente uma opção>
+<input type="checkbox" name=""  receber um input exemplo marcar a caixa de interesse pode marcar mais de um>
+<select name=""> selecionar alguma opção tipo estado</select>
+<option value="MT">Mato Grosso</option> mostrar opções
+<textarea ></textarea> criar uma area de texto
+&lt; para mostrar o sinal de menor
+&gt; para mostrar o sinal de maior
+&nbsp; para adicionar espaço a mais 
+align="direção" exemplo align="center" para centralizar 
+background ="imagem.form" para definir a imagens no fundo porem tem que fazer no body
+<div> divisão organização</div> divide 100% da tela 
+<span> mostra o conteudo um na frente do outro</span>
+<link rel="stylesheet" type="text/css" href="estilo.css"> para chamar uma folha de estilocss externo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+background
+
+
+
+
+
+
+
+
