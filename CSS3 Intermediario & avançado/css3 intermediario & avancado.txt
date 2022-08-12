@@ -98,4 +98,55 @@ list-style-type: e o tipo(para mudar os tipos dos caracters de uma ul)
 text-indent: px; para identar um textio tipo um padding só que é para texto
 
 line-height: px; para mudar o tamanho da linha do texto
- overflow: hidden; corta um pedaço de um conteudo tipo imagem
+overflow: hidden; corta um pedaço de um conteudo tipo imagem
+border-collapse: separate; para separar as bordas ja vem como padrão
+border-collapse: collapse; para juntar as bordas
+text-transform: lowercase; deixa todas as letras em minusculo
+text-transform: uppercase; deixa todas as letras em maiuscuo
+letter-spacing: 0.1em; mudar os espaçamentos entre as letras
+<fieldset> 
+    separar dados semelhantes
+    <legend>
+        legenda para esses dados semalhantes
+    </legend>
+</fieldset>
+
+<label >
+    etiqueta ou rotulo para indentificar caixa de texto
+</label>
+Quando usado junto com o <label>elemento, o foratributo especifica a qual elemento de formulário um rótulo está vinculado.
+
+Quando usado junto com o <output>elemento, o foratributo especifica a relação entre o resultado do cálculo e os elementos usados ​​no cálculo.
+ cursor: pointer; quando passar o mouse vira uma mão
+
+background: linear-gradient(to bottom, #color1, #color2); para fazer um degrade de cor funciona só nos navegadores mais novos  
+ border-radius: 10px; para rendontar imagens 
+ 
+ opacity: 0 a 1; para deixar opaco deixa a imagem esbranquiçada
+background-size: cover; para a imagem cobrir toda a area 
+background-position: center; para centralizar a imagem
+background-attachment: fixed; para deixar o background fixo
+letter-spacing: 5px; para definir os espaçamento entre os textos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
