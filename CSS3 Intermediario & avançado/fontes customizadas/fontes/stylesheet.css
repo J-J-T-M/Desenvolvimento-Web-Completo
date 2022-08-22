@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Viking-Normal';
+    src: url('Viking-Normal.woff2') format('woff2'),
+        url('Viking-Normal.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EG Dragon Caps';
+    src: url('EGDragonCaps.woff2') format('woff2'),
+        url('EGDragonCaps.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Angel wish';
+    src: url('Angelwish-Regular.woff2') format('woff2'),
+        url('Angelwish-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apocalypse Grunge';
+    src: url('ApocalypseGrunge.woff2') format('woff2'),
+        url('ApocalypseGrunge.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -128,7 +128,10 @@ background-position: center; para centralizar a imagem
 background-attachment: fixed; para deixar o background fixo
 letter-spacing: 5px; para definir os espaçamento entre os textos
 
-
+@font-face {
+    font-family: "Apocalypse esse nome eu que escolho";
+    src: url("fontes/ApocalypseGrunge.woff");/*caminho*/
+}adicionar fontes não baixadas fontes não padrão
 
 
 

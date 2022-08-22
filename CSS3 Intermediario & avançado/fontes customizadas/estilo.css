@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Apocalypse";
+    src: url("fontes/ApocalypseGrunge.woff");
+}
+@font-face {
+    font-family: "Angel";
+    src: url("fontes/Angelwish-Regular.woff");
+}
+@font-face {
+    font-family: "Dragon";
+    src: url("fontes/EGDragonCaps.woff");
+}
+@font-face {
+    font-family: "Viking";
+    src: url("fontes/Viking-Normal.woff");
+}
+h1{
+    font-size: 6em;
+    font-family: "Apocalypse";
+}
+h2{
+    font-size: 8em;
+    font-family: "Angel";
+}
+h3{
+    font-size: 3em;
+    font-family: "Dragon";
+}
+h4{
+    font-size: 3em;
+    font-family: "Viking";
+}

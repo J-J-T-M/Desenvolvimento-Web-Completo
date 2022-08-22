@@ -1,0 +1,146 @@
+normalizes é para normalizar as configurações de exibição entre diversos navegadores é bom utilizar pois pode diminiur a quantidade de bug nos site 
+-webkit- é para versões mais antigas do chrome 
+-moz- é para versões mais antigas do mozila firefox
+
+  box-sizing: border-box; indempedente do tamanho do padding a caixa não alterará o seu tamanho original
+    background: rgba(255, 255, 255, 0.5); quando adicionar o a pode adicionara transparencia
+    background: linear-gradient(se quere pode colocar a direção porem tem que colocar a palavra "to" e a direção ao contrario, cor 1, cor2); para o degradê
+ background: radial-gradient(blue, blueviolet, rgb(20, 20, 44)); faz o degradê em formar de circulo do centro para fora
+https://www.w3schools.com/css/css3_gradients.asp
+
+ text-shadow: valor em vertical valor em horizontal cor;
+ text-shadow: valor em vertical valor em horizontal valor para borrar cor;
+ https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
+
+ box-shadow: valor em vertical valor em horizontal cor ; para caixa
+ box-shadow: valor em vertical valor em horizontal valor para borrar cor; para caixa
+ box-shadow: valor em vertical valor em horizontal valor para borrar valor para aumentar o valor da caixa cor; para caixa
+https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+
+
+@keyframes nome qualquer{
+    form{
+        estado inicial
+    }
+    to{
+        estado final
+    }
+}
+animation-name: nome da animação; para iniciar
+animation-duration: 5s; e a quantidade de tempo
+animation-delay: 3s; delay
+animation-iteration-count: infinite; quantidade de vez para repedir
+animation-direction: alternate; para animação ir de tras para frente
+
+transition exemplo:
+#caixa:hover{
+    width: 400px;
+    background: yellow;
+   transition: width 3s, background 3s;
+}
+
+/***************************************************************
+
+            HTML 5 NOVAS TAGS
+
+***************************************************************/
+<header>tag de cabecalho</header>
+<nav> tag de navegação</nav>
+<footer>tag de ratape</footer>
+<article>tag de postagens</article>
+<section>tag de sessão</section>
+<time>tang de tempo</time>
+<aside>tag de conteudo lateral</aside>
+
+type="email" novo type do html 5
+type="number" novo type do html 5
+type="url" novo type do html 5
+type="search" novo type do html 5 pesquisa
+type="range" novo type do html 5 tipo aquela barrinha do instragam de reação
+type="data" novo type do html 5
+type="color" novo type do html 5
+required para definir campos de preenchimento obrigadorio
+autofocus para dar foco nas caixas 
+steep="5" para definir a quantidade de numero para pular usar somente com o type="number"
+placeholder="para criar exemplo" parecido com o value porem ele não possui valor
+
+
+display: flex;
+/*valores da propriedade flex-direction
+     *row|row-reverse|column|column-reverse
+    */
+    flex-direction: formados ;
+      /*
+    *valores da propriedade flex-wrap
+    *nowrap|wrap|wrap-reverse
+    */
+    flex-wrap: ;
+    nowrap nao havera quebra no tamanho dos itens
+    wrap havera quebra 
+    wrap-reverse havera a quebra porem vai mudar a ordem
+     /*
+    *flex-start|flex-end|center|space-between|space-around
+    */
+    justify-content: aliamento horizontal;
+     /*
+    *stretch|center|flex-start|flex-end|baseline
+    */
+    align-items: alimento vertical;
+
+
+
+
+order ; server para colocar intens em ordem
+flex-grow: ; define a proporção de espaço ocupado por um item 
+flex-shrink: ; define a proporção de espaço que o item pode incolher
+flex-basis: auto(valor inicial) 000px; indica o tamanho inicial do flex item antes da distruição do espaço restante
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

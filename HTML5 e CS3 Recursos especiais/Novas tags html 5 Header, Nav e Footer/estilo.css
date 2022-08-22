@@ -1,0 +1,13 @@
+header{
+    border: 1px solid grey;
+    padding: 10px;
+}
+nav{
+    border: 1px solid greenyellow;
+    padding: 10px;
+    background: #f2f2f2;
+}
+footer{
+    background: #ccc;
+    text-align: center;
+}

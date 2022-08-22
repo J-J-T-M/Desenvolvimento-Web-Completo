@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Novas tags de Input </title>
+    <link rel="stylesheet" type="text/css" href="nomalize.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <form>
+        <!--Nome-->
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <br><br>
+        <!--Email-->
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <!--Numero-->
+        <label for="numero">Numero</label>
+        <input type="number" name="numero" id="numero" min="5" max="30"  steep="5" required>
+        <br><br>
+        <!--Url-->
+        <label for="url">Url</label>
+        <input type="url" name="url" id="url" placeholder="ex: http://www." required>
+        <br><br>
+        <!--Pesquisa-->
+        <label for="pesquisa">Pesquisa</label>
+        <input type="search" name="pesquisa" id="pesquisa">
+        <br><br>
+        <!--Range-->
+        <label for="range">Range</label>
+        <input type="range" name="range" id="range" min="1" max="20" value="10" >
+        <br><br>
+        <!--Data-->
+        <label for="data">Data</label>
+        <input type="date" name="data" id="data">
+        <br><br>
+        <!--Cor-->
+        <label for="cor">Cor</label>
+        <input type="color" name="cor" id="cor">
+        <br><br>
+        <input type="submit" name="" value="Enviar">
+    </form>
+
+    
+</body>
+</html>
