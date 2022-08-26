@@ -1,0 +1,1216 @@
+*****************************************
+*               tag html                *
+*****************************************
+*                                       *
+*thead=cabeçalho de uma tabela          *
+*tbody=corpo de uma tabela              *
+*tfoot=rotape de uma tabela             *
+*&raquo; colocar seta para direita      *
+*&laquo; colocar seta para esquerda     *     *            *
+*****************************************
+------------------------------------------
+                  DICAS IMPORTANTES
+<span class="sr-only">aparece só para leitores de tela </span>
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS 
+    tive que pegar o script do professor pois o original não ta funcionando-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+width=device-width altura do dispositivo
+initial-scale=1 escala padrão zoom
+shrink-to-fit=no encolher para caber sempre deixar em no
+posso usar classes com h1 h2 h3 h4 h5 h6 para ter um destaque maior
+class="h1"
+class="display-1 ,2,3,4,5 para dar um destaque maior 
+class="lead" para dar um destaque maior em um paragrafo ou span para dar um destaque maior 
+class="text-monospace" deixa o texto em monospacer
+class="font-weight-bold">Texto Negrito ou elemento
+class="font-weight-normal">Texto Normalou elemento
+class="font-weight-light">Texto mais leve ou elemento
+class="font-italic">Texto italico ou elemento
+class="text-uppercase" >Letras Maicúslas 
+class="text-lowercase" >Letras Minúscula
+class="text-capitalize " > primeira maicúsla
+class="text-right" >texto a Direita 
+class="text-left" >texto a Esquerda
+class="text-center" >texto ao Centro
+<blockquote>
+    Esse é um bloco de citação!
+</blockquote>
+class="blockquote" dar um destaque maior 
+ <!--Bloco de citação com rodapé-->
+
+    <blockquote>
+        <p>
+        </p>
+        <footer>
+            
+            <cite>Jonatham Junior J-J-T-M</cite> para citar um criador 
+        </footer>
+    </blockquote>
+class="truncate" cotar o texto
+class="list-unstyled" remove estilo de lista 
+para deixar listas em inline tem que adicionar a classe no ul e li
+<ul class="list-inline">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+        <li class="list-inline-item">Item 4</li>
+    </ul>
+class="text-justify"> deixar o texto justificado
+!-- 
+        Alinhamento responsivo - 
+        class text-<tela>-<alinhamento>
+            tela: sm, md, lg, xl
+            alinhamento: left, center, right
+     -->
+     <p class="text-sm-center">tela &gt;= 576px</p><!--Small-->
+     <p class="text-md-center">tela &gt;=  768px</p><!--Medium-->
+     <p class="text-lg-center">tela &gt;= 992px</p><!--Large-->
+     <p class="text-xl-center">tela &gt;= 1200px</p><!--Extra Large-->
+
+class="d-inline"> Elemento Block para inline
+class="d-block"> Elemento inline para Block
+class="d-inline-block"> Elemento Inline-block
+class="float-left">para flutuar a Esquerda
+class="float-right"> para flutuar a Direita
+class="float-none"> para não flutuar
+class="clearfix"> para limpar o campo dos elementos flutuantes porem tem que colocar no elemento pai
+class="fixed-top"> fixar no topo
+class="fixed-bottom">fixar embaixo 
+
+Float responsivo - float-<tela>-<direcao>
+            tela: sm, md, lg, xl
+            alinhamento: left, right
+class="float-sm-right">tela &gt;= 576px <!--Small--> flutuar a Direita
+class="float-md-right">tela &gt;=  768px <!--Medium--> flutuar a Direita
+class="float-lg-right">tela &gt;= 992px <!--Large--> flutuar a Direita
+class="float-xl-right">tela &gt;= 1200px <!--Extra Large--> flutuar a Direita   
+class="sticky-top"> Colar no topo assim que chega nele 
+
+class="bg-success" aplica um background de fundo green
+class="bg-warnings" aplica um background de fundo yellow
+class="bg-info" aplica um background de fundo turquoise
+class="bg-primary" aplica um background de fundo blue
+class="bg-secondary" aplica um background de fundo grey
+class="bg-ligth" aplica um background de fundo white
+class="bg-white" aplica um background de fundo white
+class="bg-dark" aplica um background de fundo black
+class="bg-danger" aplica um background de fundo red
+class="bg-black-50" aplica um background de fundo black com uma opacidade de 50%
+class="bg-white-50" aplica um background de fundo white com uma opacidade de 50%
+class="bg-transparent" aplica um background de fundo transparente
+class="text-success" aplica uma cor green
+class="text-warnings" aplica uma cor yellow
+class="text-info" aplica uma cor turquoise
+class="text-primary" aplica uma cor blue
+class="text-secondary" aplica uma cor grey
+class="text-ligth" aplica uma cor white
+class="text-white" aplica uma cor white
+class="text-dark" aplica uma cor black
+class="text-danger" aplica uma cor red
+class="text-black-50" aplica uma cor black com uma opacidade de 50%
+class="text-white-50" aplica uma cor white com uma opacidade de 50%
+
+<!-- Aplicação de Padding
+    pt -> Padding Top
+    pb -> Padding Bottom
+    pl -> Padding Left
+    pr -> Padding Right
+    px -> Padding no eixo x (horizontal) esquerda/direita
+    py -> Padding no eixo y (vertical) top/bottom
+    p  -> Padding em todos os lados
+    Valor a definir (0 até 5)
+    -->
+        <!-- Aplicação de Margin
+    mt -> Margin Top
+    mb -> Margin Bottom
+    ml -> Margin Left
+    mr -> Margin Right
+    mx -> Margin no eixo x (horizontal) esquerda/direita
+    my -> Margin no eixo y (vertical) top/bottom
+    m  -> Margin em todos os lados
+    Valor a definir (0 até 5)
+
+<!-- classes de largura -->
+
+class="w-25 ">width 25%
+class="w-50 ">width 50%
+class="w-75 ">width 75%
+class="w-100 ">width 100%
+class="w-auto ">width auto
+
+ <!-- classes de altura -->
+
+class="h-25 ">height 25%
+class="h-50 ">height 50%
+class="h-75 ">height 75%
+class="h-100 ">height 100%
+class="h-auto ">height auto
+
+ <!-- Bordas
+    border        -> todas as bordas
+    border-top    -> borda superior
+    border-bottom -> borda inferior
+    border-right  -> bordar direita
+    border-left   -> borda esquerda
+
+    Cores de bordas
+    border-<cor>: primary, secondary, success, 
+        info, warning, danger, light, dark, white
+    -->
+
+<!-- Border Radius 
+    opções: rounded, rounded-top, rounded-right, 
+            rounded-right, rounded-left, rounded-circle
+    -->
+
+Media queries (Links úteis)
+Tipos de mídias:
+
+all – todos os dispositivos
+
+aural – sintetizadores de voz
+
+braille – leitores de Braille
+
+embossed – impressoras de Braille
+
+handheld – dispositivos de mão. Por exemplo: celulares com telas pequenas.
+
+print – impressoras convencionais
+
+projection – apresentações de slides
+
+screen – monitores coloridas
+
+tty – teleimpressores e terminais
+
+tv – televisores
+
+Exemplo de utilização:
+
+<link rel="stylesheet" media="print" href="print.css" /> 
+
+Exemplos de resoluções de telas:
+
+320 pixels – Smartphones no modo retrato.
+
+480 pixels – Smartphones no modo paisagem.
+
+600 pixels – Tablets pequenos. Ex: Amazon Kindle (600×800)
+
+768 pixels – Tablets maiores em modo retrato. Ex: iPad (768×1024)
+
+1024 pixels – Tablets maiores em modo paisagem, monitores antigos.
+
+1200 pixels – Monitores wide.
+
+Links de media queries no Bootstrap:
+
+https://getbootstrap.com/docs/4.1/layout/overview/
+
+Exemplos de utilização media queries:
+
+@media (min-width: 576px) { ... }
+
+
+<!-- Botoes 
+    formatação padrao: btn
+    formatação específicas:
+    btn-primary, btn-secondary, btn-success, btn-info,
+    btn-warning, btn-danger, btn-light, btn-dark, btn-link
+    -->
+ <!-- Botoes com contorno
+    btn-outline-<formato>
+    -->
+<!-- Tamanhos de botões
+    opções: btn-lg, btn-sm, btn-block
+    -->
+ <!-- Estados dos botões
+    opções: active, disabled
+    -->
+data-toggle="button" para criar um botao que se alterna 
+class="btn-group"> para criar um grupo de botoes um colado no outro
+class="btn-group-vertical">ra criar um grupo de botoes um colado no outro porem vertical
+class="btn-toolbar"> deixa um no lado do outro
+class="dropdown-toggle"> um botão que se expande tem que adicionar o  data-toggle="dropdown"
+<div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" type="button">
+            Clique
+        </button>
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Link 1</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">Link 2</a>
+            <a href="#" class="dropdown-item">Link 3</a>
+        </div>
+    </div>
+
+
+ <!-- Navegação
+    Tipos de navegação:
+        nav-pills
+        nav-tabs
+    opções de alinhamento: 
+        justify-content-center 
+        justify-content-end
+        flex-column
+
+  <!--Cores
+    opções: bg-primary, bg-secondary, bg-success, bg-info,
+    bg-warning, bg-danger, bg-light, bg-dark
+    -->
+   
+    
+
+    <!--Alinhamentos
+    opções: fixed-top, fixed-bottom, sticky
+    -->
+
+<!-- Navegação
+    Tipos de navegação:
+        nav-pills
+        nav-tabs
+    opções de alinhamento: 
+        justify-content-center 
+        justify-content-end
+        flex-column
+    -->
+    class="nav"> quando vc aplica ela dendo de uma ul os elementos ficar tipo inline
+
+  <h2>Navegação simples / abas</h2>
+    <ul class="nav">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Contato</a>
+      </li>
+    </ul>
+
+class="active"> para mostrar qual pagina da ativa 
+class="nav-pills "> deixa os cantos arredondados 
+class="nav-tabs "> deixa os cantos arredondados com border-bottom
+class="disabled"> deixa o link disponivel 
+class="navbar">criar uma barra de navegação
+class="navbar-nav">cria uma navegação na nav
+
+class=" navbar-expand-sm">
+class=" navbar-expand-lg">
+class=" navbar-expand-md">
+class=" navbar-expand-xl">
+class="navbar-brand"> para colocar como logo na barrra de navegação
+
+<h2>Barra de navegação com menu responsivo</h2>
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-secondary">
+      <!--Logo-->
+      <a href="" class="navbar-brand">Chalé Hotel</a>
+      <!--Menu Hamburguer-->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#qlqr-id">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Navegação-->
+      <div class="collapse navbar-collapse" id="qlqr-id">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contato</a>
+          </li>
+        </ul>   
+      </div>
+    </nav>
+ 
+class="form-inline"> para deixar o formulario inline
+
+<h2>Barra de navegação com menu dropdown</h2>
+    <nav class="navbar navbar-expand-md navbar-light bg-secondary">
+      <!--Logo-->
+      <a href="" class="navbar-brand">Chalé Hotel</a>
+      <!--Menu Hamburguer-->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Navegação-->
+      <div class="collapse navbar-collapse" id="navegacao2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+            <div class="dropdown-menu ml-auto">
+              <a href="#" class="dropdown-item">Criação de Sistemas Web-Mobile</a>
+              <a href="#" class="dropdown-item">Criação de Sistemas Locais</a>
+              <a href="#" class="dropdown-item">Analise de Software</a>
+              <a href="#" class="dropdown-item">Gerencia de Projetos</a>
+              
+            </div>
+          </li>
+        </ul>   
+      </div>
+    </nav>
+
+<!--Alinhamentos
+    opções: fixed-top, fixed-bottom, sticky
+    -->
+
+classe: list-group-item
+list-group é para a ul 
+list-group-item para o li
+eles deixar cada elemento da lista com uma borda 
+list-group-flush deixa a lista só com a borda superior e inferior
+
+
+ <!-- Listas com classes contextuais 
+        classe: list-group-item-<opcoes>
+        opções: primary, secondary, success, info,
+                warning, danger, light, dark
+    -->
+
+    classes
+    list-group-item-primary
+    list-group-item-secondary
+    list-group-item-success
+    list-group-item-info
+    list-group-item-warning
+    list-group-item-danger
+    list-group-item-light
+    list-group-item-dark
+
+ <!-- Badge 
+        classe: badge-<opcoes>
+        opções: primary, secondary, success, info,
+                warning, danger, light, dark
+    -->
+ <li class="list-group-item">
+            caixa de entrada 
+            <span class="badge badge-danger">120</span>
+        </li>
+
+class="breadcrumb"> server para mostrar aonde o usuario esta nas paginas e para poder voltar a paginas anteriores mais facilmente 
+ class="breadcrumb-item"> tem que colocar para os seus filho-item
+
+class="form-group">para mostrar que vai ter um grupo de formulario e alem disso ele aplica um espaçamento
+class="from-control"> usa no input text area
+<!-- formulários 
+        classe: form-control-<opcoes>
+        opções: sm, lg
+    -->
+class="form-text"> formatar texto dentro de formularios
+class="form-control-file"> para arquivo
+
+    <!-- file input -->
+        <div  class="form-group">
+            <label for="arquivo">Arquivo</label>
+            <input class="form-control-file" type="file" id="arquivo">
+        </div>
+
+ <!-- custom file input -->
+        <div class="custom-file">
+            <label class="custom-file-label">Selecione arquivo</label>
+            <input class="custom-file-input" type="file" id="arquivo">   
+        </div>
+
+class="form-inline">para deixar formularios em formato inline
+
+ <!-- 
+    Validação de formulário 
+    Classes: is-valid(valido), is-invalid(invalido),valid-feedback(deixa as letras verde), invalid-feedback(letras ficam vermelha)
+    -->
+
+
+    /***************************************
+                  Input group
+    ***************************************/
+class="input-group">para avisar que vem um grupo de input
+class="input-group-prepend"> para deixar o conteudo antes do input 
+class="input-group-append"> para deixar o conteudo depois do input 
+class="input-group-text"> para deicar o text junto com a caixa de input
+/***************************************
+                  Alertas & Barra de progresso
+****************************************/
+class="alert"> vai aplicar um espaçamento interno
+&times cria um X
+class="close">fechar
+/***************************************
+                 Barra de progresso
+****************************************/
+class="progress"> para criar uma barra de progresso
+class="progress-bar w-75">preencher a barra
+class="progress-bar-striped">deixa a barra listada
+class="progress-bar-striped progress-bar-animated"> para deixar ele animada com as listas se movimentando
+
+/***************************************
+                 Tabelas 
+****************************************/
+class="table table-striped">deixa com linha de cores alternadas
+class="table table-borderless"> deixa a tabela sem borda
+class="table table-bordered"> deixa a tabela com as linhas laterais
+Classes contextuais: table-success, table-danger, table...
+/***************************************
+                Paginação
+****************************************/
+Paginação: pagination, page-item, page-link - active, disabled
+<nav >
+      <ul class="pagination pagination-sm">
+        <li class="page-item disabled">
+          <a class="page-link" href="">Anterior</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link"href="">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link"href="">Próximo</a>
+        </li>
+      </ul>
+    </nav>
+/***************************************
+               Cards
+****************************************/
+dica intereçande usar duas div para fazer o cartão 
+na primeira div class="card"> adicionar um border com arredondamento
+na segunda div class="card-body"> para criar o corpo do cartão ele dar uns padding e margin dentro do card
+class="card-title"> classe de titulo do cartão aplica um espaçamento diferente 
+class="card-subtitle"> classe de subtitulo do cartão aplica um espaçamento diferente 
+class="card-text"> classe para texto
+class="card-img-top">para deixar imagens no topo 
+class="card-img-bottom">para deixar imagens no abaixo 
+class="card-img-overlay"> para sobrescrever a imagem deixa as coisa emcima dela porem tem que usar com a class="card-img" na imagem
+class="card-img">ela prepara para a imagem se sobrescrita 
+class="card-header"> é para criação de cabeçalho do cartão adicionar border e background diferente
+class="card-footer"> é para criação de rodapé do cartão adicionar border e background diferente
+class="card-nav-tabs">criar navegação específica para card 
+class="card-columns"> para criar um cartão com colunas
+/***************************************
+              Jumbotron 
+****************************************/
+tipo uma area de destaque 
+
+class="jumbotron"> para criar uma area de destaque 
+class="media"> para formatação de midia 
+class="media-body"> para corpo da midia para ficar no lado dela 
+
+/***************************************
+        Alinhamento de Imagem
+****************************************/
+Alinhamentos: align-self-ALINHAMENTO (start, center, end)
+
+/***************************************
+      Icones
+****************************************/
+class="oi oi-icon-name"> para usar um icone do iconic
+<i class="oi oi-icon-name"></i>
+
+class="fa fa-icon-name"> para usar um icone do fontawesome
+<i class="fa fa-icon-name"></i>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+body{
+    margin-bottom: 200px;
+    padding: 16px;
+    color: rgb(0, 250, 112);
+    background: black;
+}
+.border{
+    border: solid 1px red;
+}
