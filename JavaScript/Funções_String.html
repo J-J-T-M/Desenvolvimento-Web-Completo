@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções de String</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    //    .length retorna o tamanho de uma string 
+    var loremIpsum = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has '
+    var verdade = 'JavaScript não é melhor que JAVA'
+    var java = "java"
+    document.write(" A variavel loremIpsum tem " + loremIpsum.length + " caracteres <br>")
+    document.write(" A variavel verdade tem " + verdade.length + " caracteres <br>")
+    document.write(" A variavel java tem " + java.length + " caracteres <br><br>")
+
+    document.write(" " + loremIpsum.charAt(4) + "  <br>")
+    document.write("" + verdade.charAt(9) + " <br>")
+    document.write("" + java.charAt(0) + "  <br><br>")
+
+    document.write(" " + loremIpsum.indexOf('x') + "  <br>")
+    document.write("" + verdade.indexOf('u') + " <br>")
+    document.write("" + java.indexOf('v') + "  <br><br>")
+    
+    document.write(" " + loremIpsum.replace('Lorem Ipsum', 'bla bla bla') + "  <br>")
+    document.write("" + verdade.replace('não é melhor', 'não tem chace contra') + " <br>")
+    document.write("" + java.replace('v', 'V') + "  <br><br>")
+
+    document.write("" + verdade.substr(28,4) + " <br><br>")
+
+    document.write("" + verdade.toLowerCase() + " <br><br>")
+    document.write("" + verdade.toUpperCase() + " <br><br>")
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

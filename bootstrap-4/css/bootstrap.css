@@ -3971,7 +3971,10 @@ input[type="button"].btn-block {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
-
+nav.navbar-transparent{
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
 .navbar > .container,
 .navbar > .container-fluid {
   display: -ms-flexbox;

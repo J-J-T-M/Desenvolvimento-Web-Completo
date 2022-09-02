@@ -1,0 +1,10 @@
+body,head{
+    background: black;
+    color: rgb(5, 252, 67);
+}
+.h1blue {
+    color: rgb(0, 60, 255);
+}
+.h1blueviolet {
+    color: blueviolet;
+}

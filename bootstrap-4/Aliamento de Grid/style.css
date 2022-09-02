@@ -1,0 +1,32 @@
+
+body{
+
+    color: whitesmoke;
+    background: black;
+
+}
+.marcador{
+    background: #fe9d9d;
+    border: 1px solid #f94646;
+}
+.marcador-conteiner{
+    background: #5bf946;
+    border: 1px solid #36ae26;
+    height: 120px;
+
+}
+.marcador1{
+    background: #09c7e9;
+    border: 1px solid #ce07e9;
+}
+.marcador2{
+    background: #e96e09;
+    border: 1px solid #e5ff00;
+}
+.marcador3{
+    background: #e5ff00;
+    border: 1px solid #e9095f;
+}
+.borda{
+    border: 1px solid blue;
+  }

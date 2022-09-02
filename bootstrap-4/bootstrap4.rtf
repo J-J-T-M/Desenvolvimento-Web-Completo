@@ -11,18 +11,6 @@
 ------------------------------------------
                   DICAS IMPORTANTES
 <span class="sr-only">aparece só para leitores de tela </span>
-
-
-
-
-
-
-
-
-
-
-
-
 --------------------------------------------
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS 
@@ -537,37 +525,95 @@ class="oi oi-icon-name"> para usar um icone do iconic
 
 class="fa fa-icon-name"> para usar um icone do fontawesome
 <i class="fa fa-icon-name"></i>
+fontawesome 
+/*************************************** 
+              Grid 
+****************************************/ 
+class="row">para criar uma linha 
+col- col-sm- col-md- col-lg- col-xl- 
+class="col-numero de grid"> 
+class="col">deixa a largura fixa
+class="col-numero de 1 a 12">deixa a largura automatica
+class="col-fuxido do aparelho">deixa a largura igual e empilha quando chegar no tamanho do sufixo
+class="order-numero de 1 a 12"> para ordernar a sequencia de exibição
+class="offset-com ou sem prefixo-numero de 1 a 12"> para alinhar ou jogar o conteudo para frente
 
+/*************************************** 
+             Alinhamento do grid
+****************************************/ 
+Alinhamento vertical (align-items-ALINHAMENTO: start, center, end)
+Alinhamento vertical individual (align-self-ALINHAMENTO: start, center, end)
+Alinhamento horizontal colunas (justify-content-ALINHAMENTO: start, center, end)
+Distribuição (justify-content-ALINHAMENTO: around, between, end)
+removento espaçamento no-guttrs
 
+/*************************************** 
+              Classes flexbox
+****************************************/ 
+Flex container e flex itens (d-flex, flex-row, flex-column, flex-row-reverse)
+Alinhamento horizontal: justify-content-ALINHAMENTO (start, center, end, around e between)
+Colunas (d-flex, flex-column, flex-column-reverse)
+Alinhamento vertical: align-items-ALINHAMENTO (start, center, end, baseline e stretch)
+Alinhamento self: align-self-ALINHAMENTO (start, center, end, baseline e stretch)
 
+/*************************************** 
+              Margin e Wrap
+****************************************/
+Margin right/left auto (mr-auto, ml-auto)
+Margin bottom/top auto (mt-auto, mb-auto)
+Wrap (flex-wrap, flex-nowrap)
 
+/*************************************** 
+              Imagens
+****************************************/
+Para imagem responsiva
+<img src="image_source" class="img-fluid" ...>
+Para alinhar a imagem à esquerda
+<img src="image_source" class="float-left" ...>
+Para alinhar a imagem à direita
+<img src="image_source" class="float-right" ...>
+Para alinhar a imagem ao centro
+<img src="image_source" class="mx-auto d-block" ...
+/*************************************** 
+              Carousel
+****************************************/
+class="carousel slide" data-ride="carousel"> para criação de um Carousel
 
+<h1>Slider simples</h1>
+          <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/imagem1.jpeg" class="img-fluid">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/imagem2.jpeg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+class="carousel-control-prev" data-slide="prev"> para colocar um controle anterior
+<!--Controles-->
+            <a href="#carousel-controles" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#carousel-controles" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+            observação tem que adicionar um id na div que tem carousel slide
 
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+              <li class="active" data-target="#carousel-controles-indicadores" data-slide-to="0"></li>
+              <li data-target="#carousel-controles-indicadores" data-slide-to="1"></li>
+              <li data-target="#carousel-controles-indicadores" data-slide-to="2"></li>
+              <li data-target="#carousel-controles-indicadores" data-slide-to="3"></li>
+              <li data-target="#carousel-controles-indicadores" data-slide-to="4"></li>
+            </ol>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <!--Legendas-->
+            <div class="carousel-caption">
+                  <h3>Item 01</h3>
+                  <p> bla bla bla bla </p>
+                </div>
 
 
 
