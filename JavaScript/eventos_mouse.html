@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos_mouse</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function acao(){
+            alert('Evento disparado')
+        }
+        
+
+    </script>
+</head>
+<body>
+    <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px">
+    <h1>um clique</h1></div>
+    <div ondblclick="acao()" style="background: rgb(219, 12, 12); height: 150px; width: 150px">
+    <h1>dublo clique</h1></div>
+    <div onmouseup="acao()" style="background: rgb(12, 136, 219); height: 150px; width: 150px">
+        <h1>clique e matenha por pouco tempo</h1></div>
+    <div onmouseover="acao()" style="background: rgb(219, 12, 219); height: 150px; width: 150px">
+        <h1>passa o mouse em cima</h1></div>
+    <div onmouseout="acao()" style="background: rgb(12, 219, 57); height: 150px; width: 150px">
+        <h1>passa o mouse fora da caixa</h1></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Ordenação</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function ordenaNumeros(a , b){
+            return a - b
+            // 0 < a ordenado antes de b
+            // 0 > a ordenado depois de b
+            // a == b é mantido a posição
+
+        }
+        var lista_frutas = Array()
+        lista_frutas[0] = "uva"
+        lista_frutas[1] = "morango"
+        lista_frutas[2] = "maça"
+        lista_frutas[3] = "banana"
+
+        document.write(lista_frutas)
+        document.write("<br>")
+        document.write("<br>")
+        // para fazer uma ordenação 
+        // nome_array.sort()
+
+        document.write(lista_frutas.sort())
+        document.write("<br>")
+        document.write("<br>")
+
+        var lista_numeros = Array()
+        lista_numeros[0] = 12
+        lista_numeros[1] = 40
+        lista_numeros[2] = 3
+        lista_numeros[3] = 7
+        lista_numeros[4] = 19
+        lista_numeros[5] = 1
+        lista_numeros[6] = 1.52
+
+        document.write(lista_numeros)
+        document.write("<br>")
+        document.write("<br>")
+        document.write(lista_numeros.sort(ordenaNumeros))
+    </script>
+</head>
+<body>
+    
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array_incluir-remover</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function verificacao(valor){
+            if(valor === -1){
+                document.write("<br> O elemento não existre <br>")
+            }else{
+                document.write("<br> O Elemento existre na posição "+ valor+"<br>")
+            }
+        }
+        var lista_frutas = Array()
+        var resp 
+
+        lista_frutas[0] = "banana"
+        lista_frutas[1] = "maça"
+        lista_frutas[2] = "morango"
+        lista_frutas[3] = "uva"
+
+
+        // fazer uma pesquisa dentro do Array
+        // nome_array.indexof('elemento_para_pesquisar')
+
+        resp=lista_frutas.indexOf('uva')
+        verificacao(resp);
+        resp=lista_frutas.indexOf('uvas')
+        verificacao(resp)
+
+
+
+    </script>
+</head>
+<body>
+    
+    
+</body>
+</html>

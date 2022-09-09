@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções para Data</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    var data_atual = new Date();
+    var data =data_atual
+    datA = new Date( "MM/DD/YYYY" )
+    document.write("A data de hoje é : "+ data_atual+"<br>")
+    document.write("<br> ano "+data_atual.getFullYear()+"<br>")
+    document.write("<br> mes "+(data_atual.getMonth() +1 )+"<br>")
+    document.write("<br> dia "+data_atual.getDate()+"<br>")
+    document.write("<br> horas "+data_atual.getHours()+"<br>")
+    document.write("<br> minutos "+data_atual.getMinutes()+"<br>")
+    document.write("<br> segundos "+data_atual.getSeconds()+"<br>")
+    document.write("<br> milisegundos "+data_atual.getMilliseconds()+"<br>")
+    document.write("<br> Obtém a hora (milissegundos desde 1º de janeiro de 1970) "+data_atual.getTime()+"<br>")
+    document.write("<br> dia da semana "+data_atual.getDay()+"<br>")
+    document.write("<hr>")
+    data.setDate(data.getDate()+1024)
+    document.write("<br> dia "+data.toString()+"<br>")
+    document.write("<hr>")
+    document.write(datA)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

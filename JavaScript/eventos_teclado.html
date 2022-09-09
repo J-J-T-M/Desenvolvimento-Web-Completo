@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos_teclado</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function acao(){
+            alert('Evento disparado')
+        }
+    </script>
+</head>
+<body>
+    <input onkeydown="acao()" type="text" placeholder="onkeydown"/>
+    <br><br>
+    <input onkeyup="acao()" type="text" placeholder="onkeyup"/>
+    <br><br>
+    <input onkeypress="acao()" type="text" placeholder="onkeypress"/>
+    
+</body>
+</html>

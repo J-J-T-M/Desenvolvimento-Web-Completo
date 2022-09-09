@@ -67,19 +67,86 @@ variavel.replace(cadeia de caracteres, Substituição)
 variavel.substr(valor inicial, até valor)
 variavel.toLowerCase() deixar todoas os carecters em ciaxa baixa minisculo
 variavel.toUpperCase() deixar todoas os carecters em ciaxa alta maiusculo
+************************************************************************
+                Funções Matematicas
+Math.ceil(valor ou variavel ) arredonta os valores decimais para cima para transformar em inteiro
+Math.floor(valor ou variavel) arredonta os valores decimais para baixo para transformar em inteiro
+Math.round(valor ou variavel)arredonta os valores decimais para cima ou para baixo levando os criterios de arredontamento para transformar em inteiro
+********************************************************************************
+                Funçoes para data
+data.getFullYear()Obter o ano como um número de quatro dígitos (aaaa)
+data.getMonth()Obter o mês como um número (0-11)
+data.getDate()Obter o dia como um número (1-31)
+data.getHours()Obter a hora (0-23)
+data.getMinutes() Obtém o minuto (0-59)
+data.getSeconds() Obtém o segundo (0-59)
+data.getMilliseconds() Obtém o milissegundo (0-999)
+data.getTime() Obtém a hora (milissegundos desde 1º de janeiro de 1970)
+data.getDay() Obtém o dia da semana como um número (0-6)
+data.Date.now() Obtém a hora. ECMAScript 5
+obs se mudar para set consegue modificar as datas e horas com os mesmo metodos só substituir de get para set
+**********************************************************************
+                Eventos 
+////////////////////////////////////////////////////////////////////
+                Mouse
+onclick == clicado uma vez
+ondblclick == clicado duas vezes
+onmouseup == clique sobre um determinado  elemento é liberado
+onmouseover == quando o cusor do mouse passa no elemento
+onmouseout == quando o cusor do mouse sai da pagina 
+///////////////////////////////////////////////////////////////////
+                teclado
+onkeydown == clica em qualquer tecla do teclado
+onkeypress == quando mantem a tecla pressionada
+onkeyup == quando vc solta a tecla
+////////////////////////////////////////////////////////////////////
+                Janela 
+onresize == acionada atraves do redirecionamento da pagina
+onscroll == acionada atraves do scroll
+/////////////////////////////////////////////////////////////////////
+                Formulário
+onfocus == acionado quando recebe o cursor do mouse obtem o foco
+onblur == acionado quando o elemento nao recebe o curso do mouse perde o foco
+onchange == acionado quanto o estado do elemento é motificado
+**********************************************************************
+                DOM
+///////////////////////////////////////////////////////////////
+PRINCIPAIS ELEMENTOS 
+getElementById()
+getElementsByTagName()
+getElementsByClassName()
+getElementsByName()
 
-
-
-
-
-
-
-
-
-
-
-
-
+*************************************************************
+                eval
+A função eval() computa um código JavaScript representado como uma string
+**************************************************************
+                Array
+var variavel = Array()
+incluir no final do Array
+        nome_array.push('')
+incluir no inicio do Array
+        nome_array.unshift('')
+excluir no final do Array
+        nome_array.pop()
+excluir no inicio do Array
+        nome_array.shift()
+fazer uma pesquisa dentro do Array
+        nome_array.indexof('elemento_para_pesquisar')
+        ele retorna a posição ou -1 se não existrir
+para fazer uma ordenaçã 
+        nome_array.sort()
+        ele ordenana por order alfabetica
+        para ordernar numeros tem que usar uma função junto
+        function ordenaNumeros(a , b){
+            return a - b
+            0 < a ordenado antes de b
+            0 > a ordenado depois de b
+            a == b é mantido a posição
+            
+        }
+        array_numeros.sort(ordenaNumeros)
+        sem o Parênteses da função
 
 
 

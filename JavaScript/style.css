@@ -1,6 +1,7 @@
 body,head{
+    all: unset;
     background: black;
-    color: rgb(5, 252, 67);
+    color: rgb(5, 203, 252);
 }
 .h1blue {
     color: rgb(0, 60, 255);

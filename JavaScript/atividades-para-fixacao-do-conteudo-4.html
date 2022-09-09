@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividades-para-fixacao-do-conteudo-3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="../bootstrap-4/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <script>
+            function adicionar(){
+                var valorCampo = document.getElementById('campo').value
+                if(valorCampo == '')
+                {
+                  alert("Informe um valor válido")
+                }else 
+                { 
+                   
+                    if( objetos.indexOf(valorCampo) === -1){
+                        objetos.push(valorCampo)
+                        console.log(objetos)
+                    }
+                    else
+                    {
+                        alert("Objeto já foi adicionado")
+                    }
+                    document.getElementById('campo').value = ''
+                }
+            }
+            function ordenar(){
+                objetos.sort();
+                console.log(objetos)
+            }
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+
+        </script>   
+</head>
+<body >
+    
+    <input  type="text" placeholder="Digite" id="campo">
+    <button type="button" onclick="adicionar()">Adicionar</button>
+    <button type="button" onclick="ordenar()" >Ordenar</button>
+    
+</body>
+</html>

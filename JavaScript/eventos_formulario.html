@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos_formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+       function evtconsole(){
+            console.log('Evento disparado')
+        }
+        function evtconsole1(){
+            console.log('Evento disparado')
+        }
+    </script>
+</head>
+<body >
+   <input onfocus="evtconsole()" type="text" placeholder="dispara quando recebe o foco"/>
+   <input onblur="evtconsole1()" type="text"placeholder="dispara quando perde o foco"/>
+    <select onchange="console.log('O estado foi modifocado')">
+        <option >--Selecione--</option>
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+    </select>
+</body>
+</html>

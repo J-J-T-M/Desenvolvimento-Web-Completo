@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom_Manipulando estilos de elementos</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function modificaEstilo(corDeFundo){
+            document.getElementById('q').style.background = corDeFundo
+        }
+
+    </script>
+</head>
+<body >
+    
+    <button type="button" onclick="modificaEstilo('#FF0000')">Vermelho </button>
+    <button type="button" onclick="modificaEstilo('#00FF00')">Verde </button>
+    <button type="button" onclick="modificaEstilo('#0000FF')">Azul </button>
+    <hr>
+    <div style="border:solid 1px rgb(247, 210, 3); width: 100px; height: 100px; " id="q"></div>
+</body>
+</html>

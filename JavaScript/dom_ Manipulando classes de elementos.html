@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom_Manipulando classes de elementos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="../bootstrap-4/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <style>
+        .estilo2{
+            padding: 20px 0;;
+            background: url(img/g2.gif) no-repeat;
+            height:  512px ;
+            width:  512px ;
+            color: greenyellow;
+        }
+        .estilo1{
+            padding: 20px 0;;
+            background: url(img/i1.jpg) no-repeat;
+            height:  512px ;
+            width:  512px ;
+            
+        }
+        .estilo3{
+            padding: 20px 0;;
+            background: url(img/i2.jpg) no-repeat;
+            height:  512px ;
+            width:  512px ;
+            
+        }
+        
+    </style>
+    <script>
+        function modificaclasse(){
+            document.getElementById('mensagem').className = 'estilo2'
+        }
+        function modificaclasse2(){
+            document.getElementById('mensagem').className = 'estilo3'
+        }
+        
+    </script>
+</head>
+<body >
+    
+    <div id="mensagem" class="estilo1">
+        <h1 class="display-4">Modificando a Classe</h1>
+        <hr>
+        <button onclick="modificaclasse()" ondblclick="modificaclasse2()" type="button" class="btn btn-lg" >Aplicar classe</button>
+    </div>
+    
+</body>
+</html>
