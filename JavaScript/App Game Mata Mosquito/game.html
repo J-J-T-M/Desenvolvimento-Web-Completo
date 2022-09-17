@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Mosquito</title>
+    <script src="jogo.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body onresize="adjustSizeStage()">
+   <div class="panel">
+        <div class="lives">
+            <img id="v1" src="imagens/coracao_cheio.png">
+            <img id="v2" src="imagens/coracao_cheio.png">
+            <img id="v3" src="imagens/coracao_cheio.png">
+        </div>
+        <div class="stopwatch">
+            Tempo restante: <span id="stopwatch"></span>
+        </div>
+        <div class="punctuation">
+            Pontuação: <span id="punctuation"></span>
+        </div>
+
+   </div>
+    <script>
+        level_rule()
+        document.getElementById('stopwatch').innerHTML = time;
+        document.getElementById('punctuation').innerHTML = spots;
+         var criarmosquito = setInterval(function() {
+        randomPosition()
+        }, criarmosquitotempo);
+    </script>
+    
+</body>
+</html>

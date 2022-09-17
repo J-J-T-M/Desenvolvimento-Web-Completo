@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>babel</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+       let s = 's1'
+       console.log(s)
+       function x(){
+        console.log(" function " +s)
+        let s2 = "s2"
+       }
+       if(true){
+            let s3 = 's3'
+       }
+       x();
+    //    console.log(s2)
+    //    console.log(s3)
+       
+       var h = 'h1'
+       console.log(h)
+       function y(){
+        console.log(" function " +h)
+        var h2 = "h2"
+       }
+       if(true){
+            var h3 = 'h3'
+       }
+       y();
+    //    console.log(h2)
+       console.log(h3)
+    </script>
+</head>
+<body>
+    olhar no console.log()
+</body>
+</html>

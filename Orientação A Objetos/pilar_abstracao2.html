@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>oo pilar abstração</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+       class Cadeira{
+        constructor(qtde_pernas, giratoria, cor, codigo){
+            this.qtde_pernas = qtde_pernas
+            this.giratoria = giratoria
+            this.cor = cor
+            this.codigo = codigo
+        }
+        girarCadeira(){
+            if(this.giratoria ===true){
+                document.write("girou <br />")
+            }else{
+                document.write("cadeira não giratoria <br />")
+            }
+        }
+        toStrings(){
+            document.write("codigo : " + this.codigo +   " quantidade de pernas : " + this.qtde_pernas+ " cor : " + this.cor+ " giratoria : " + this.giratoria + "<br>")
+        }
+       }
+       
+       let cadeira1 = new Cadeira(4,false,'amarela',1)
+       cadeira1.girarCadeira()
+       cadeira1.toStrings()
+       let c2 = new Cadeira(4,false,'amarela',2)
+       c2.girarCadeira()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

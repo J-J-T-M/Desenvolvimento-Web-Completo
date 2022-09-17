@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de erros</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+     var video = Array()
+     video[1]=Array();
+     video[1]['nome'] = "Naruto"
+     video[1]['categoria'] = "Anime"
+     function getvideo(video){
+        try{
+            document.write(video[0]['nome'])
+        }catch(e){
+            document.write(e)
+            document.write("<br>Agora pode tratar esse erros <br>")
+            throw new Error("Houve um erro mas não se preocupe, estamos trabalhando nisso agora!!!")
+           
+        }
+        finally{
+            document.write("<br> Sempre passa por aqui try/catch <br> ")
+        }
+
+     }
+     getvideo(video)
+
+    </script>
+</head>
+<body>
+    
+    
+</body>
+</html>
