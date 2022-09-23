@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Assignment parte 1</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // destructuring
+            // ele tira valores dentro de uma estrutura pode ser um array ou object
+        
+        // array
+        let frutas = ['Abacaxi ','Uva ', 'Pera ', 'Mamão ']
+        
+        document.write(frutas +"<br>")
+
+        // se a variavel não tiver valor eu posso adicionar valores default
+        // sequerer pular algum indice é so colocar duas , , que esse indice vai ser pulado
+        let [a, b = 'Abacate ', , c, d = 'Banana ' ] = frutas
+
+        document.write(a, b, c,d +"<br>")
+
+        // se querer recuperar a variavel maria let [,[,n2]] = coisas
+        let coisas =[['Abacaxi ','Uva ', 'Pera ', 'Mamão '],['João','Maria']]
+        let [,[,n2]] = coisas
+        document.write(coisas +"<br>")
+        document.write(n2 +"<br>")
+        let [[,,n3],] = coisas
+        document.write(n3 +"<br>")
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

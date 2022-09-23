@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herança </title>
+    <script>
+        class Animal{
+            constructor(){
+                this.cor = 'branco e marron'
+                this.tamanho 
+            }
+            dormir(){
+                document.writeln("dormindo")
+            }
+        }
+        class Cachorro extends Animal{
+            constructor(){
+                super()
+                this.orelha = 'grandes'
+            }
+            tamanho = 30
+            correr(){
+                document.writeln("correndo")
+            }
+            rosnar(){
+                document.writeln("rosnando")
+            }
+            
+        }
+        class Passaro extends Animal{
+            constructor(){
+                super()
+                this.bico = 'curto'
+            }
+            tamanho=10
+            voar(){
+                document.writeln("voando")
+            }
+        }
+        let cachorro = new Cachorro()
+        let passaro = new Passaro()
+        console.log(cachorro)
+        cachorro.dormir()
+        cachorro.correr()
+        cachorro.rosnar()
+        console.log(passaro)
+        passaro.dormir()
+        passaro.voar()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

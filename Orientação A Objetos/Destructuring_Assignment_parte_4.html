@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Assignment parte 4</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // destructuring
+        
+        // array
+
+        let arr = [1 ,2 ,3 ,5 ,8 ,13];
+        
+        let [a,...resto] = arr
+        document.write(`a = ${a} resto = ${resto} <br>`)
+        
+        // object
+
+        let obj = {
+            a : 10,
+            b : 20,
+            c : 30,
+            d : 50,
+            e : 80
+        }
+        let {b , ...z} = obj
+        document.write(`b = ${b} resto = ${z} <br>`)
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

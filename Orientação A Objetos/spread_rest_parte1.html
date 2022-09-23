@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread rest</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        //  spread significa espalhar 
+
+        // string
+
+        let tituloArtigo = 'Como utilizar o operador rest/spread'
+
+        document.writeln(tituloArtigo)
+        document.write('<br>')
+
+        document.write('Olhar no console.log')
+        console.log(...tituloArtigo)
+
+        document.write('<br>')
+        document.writeln([...tituloArtigo])
+
+        document.write('<br>')
+
+        // array
+
+        let listaCurso1 = ['Java ','PHP ']
+        let listaCurso2 = ['Soft Skills ','Pensamento Computacional ']
+        let listaCursoCompleto = ['O que voçê não vê ', 'O principio da ideia ',...listaCurso1,...listaCurso2]
+
+        document.writeln(listaCursoCompleto)
+        document.write('<br>')
+
+        // objetos
+
+        let pessoa = {
+            nome:"Jonatham",
+            idade: 21
+        }
+        let clone = {
+            enderenco: 'Rua 00',
+            ...pessoa
+        }
+        document.write("olhar no console.log")
+        console.log(pessoa)
+        console.log(clone)
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

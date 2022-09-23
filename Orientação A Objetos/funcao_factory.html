@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcao_costrutora_encapsuladora</title>
+    <script>
+       let Bicicleta1 ={
+        cor: 'Branco',
+        marcha: 'unica',
+        aro: 12,
+        pedalar(){
+            document.write("Método pedalar executado")
+        }
+       }
+       let Bicicleta2 ={
+        cor: 'Azul',
+        marcha: '18',
+        aro: 18,
+        pedalar(){
+            document.write("Método pedalar executado")
+        }
+       }
+       let BicicletaFactory = function(cor,marcha,aro){
+            return {
+                cor,
+                marcha,
+                aro,
+                pedalar(){
+                    document.write("Método pedalar executado")
+                }
+            }
+       }
+       let Bicicleta3 = BicicletaFactory('vermelha','21',29)
+       console.log(Bicicleta3)
+
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
