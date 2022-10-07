@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Objetos literais</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        let nome = 'Jonatham'
+        let idade = 21
+        let sexo = 'masculino'
+        let profissao = 'estagiario'
+        let objeto = {
+            nome: nome,
+            idade: idade,
+            sexo: sexo,
+            profissao: profissao,
+            exibirResumo: function (){
+                document.write(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}<br>`)
+            }
+        }
+        let objeto2 = {
+            nome,
+            idade,
+            sexo,
+            profissao,
+            exibirResumo(){
+                document.write(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}<br>`)
+            }
+        }
+
+        document.write(objeto)
+        objeto.exibirResumo()
+
+        document.write(objeto2)
+        objeto2.exibirResumo()
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

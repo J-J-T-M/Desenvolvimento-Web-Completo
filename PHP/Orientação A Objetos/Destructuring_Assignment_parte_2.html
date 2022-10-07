@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Assignment parte 2</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // destructuring
+            // ele tira valores dentro de uma estrutura pode ser um array ou object
+        
+        // object
+
+        let produto = {
+            descricao: 'Notebook ',
+            preco: 3999.99,
+            detalhes:{
+                febricante: 'Acer ',
+                modelo: 'Aspire 3 nxz01a684rt '
+            }
+        }
+        let {descricao, preco, detalhes} = produto;
+        document.write(descricao,preco +"<br>")
+
+        document.write("Olhar no console.log<br>")
+        console.log(detalhes)
+
+        let {descricao:d, preco:p} = produto;
+        document.write(d,p +"<br>")
+        
+
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

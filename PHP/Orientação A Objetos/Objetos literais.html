@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos literais</title>
+    <script>
+        class Produtos{
+            constructor(descricao , preco){
+                this.descricao = descricao;
+                this.preco = preco;
+            }
+            verdescricao(){
+                document.writeln(`${this.descricao} por apenas de ${this.preco}<br>`);
+            }
+        }
+        let produto1 = new Produtos
+        produto1.descricao = 'Notebook Gamer'
+        produto1.preco = 15000
+        produto1.verdescricao()
+        let produto2 ={
+            descricao: 'Notebook Republican',
+            preco: 18000,
+            verdescricao: function(){
+                document.writeln(`${this.descricao} por apenas de ${this.preco}<br>`)
+            }
+        }
+        produto2.verdescricao()
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

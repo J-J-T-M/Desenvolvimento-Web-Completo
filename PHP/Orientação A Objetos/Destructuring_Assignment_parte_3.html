@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Assignment parte 3</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // destructuring
+        
+        // array
+       
+        let arr = [10, 20, 30, 40, 50, 60];
+        
+        function teste([a,b]){
+            document.write(` ${a} ${b} <br>`);
+
+        }
+
+        teste(arr);
+
+        // object
+
+        let obj = {
+            a : 1,
+            b : 2,
+            c : 3,
+            d : 5,
+            e : 8
+        }
+    
+        function teste2({a , b}){
+            document.write(` ${a} ${b} <br>`);
+
+        }
+
+        teste2(obj);
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

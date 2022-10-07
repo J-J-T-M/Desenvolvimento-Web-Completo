@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos literais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap-4/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <form class="form-inline pt-3 pl-5" >
+        <div class="form-group ">
+            <label  class="mr-2 ml-2">Nome:</label>
+            <input class="form-control " onkeyup="dinam()" type="text" name="nome" id="nome" placeholder="Digite seu nome" >
+        </div>
+        <div class="form-group ">
+            <label  class="mr-2 ml-2" >Idade:</label>
+            <input class="form-control " type="number" id="idade" placeholder="Digite seu idade">
+        </div>
+        <div  class="form-group ">
+            <label for="sexo" class="mr-2 ml-2">Sexo:</label>
+            <select  class="form-control form-select-lg"  id="sexo">
+                <option selected>Selecione</option>
+                <option class="form-control">Feminino</option>
+                <option class="form-control">Masculino</option>
+            </select>
+        </div>
+        <div class="form-group ">
+            <label  class="mr-2 ml-2" >Profissão:</label>
+            <input class="form-control " type="text" id="profissao" placeholder="Digite sua profissão">
+        </div>
+        <button type="button" class="btn btn-primary " onclick="setvalue()">Avançar</button>
+    </form>
+    <div>
+        <span id="teste"></span>
+    </div>
+    <div>
+        <h5>Elemento dinâmico</h5>
+        <p>Elemento dinâmico: <span id="teste1"></span></p>
+    </div> 
+    <script>
+
+        function setvalue (){
+           
+            let nome = document.getElementById('nome').value;
+            let idade =  document.getElementById('idade').value;
+            let sexo =  document.getElementById('sexo').value;
+            let profissao =  document.getElementById('profissao').value;
+            let result ={
+                nome,
+                idade,
+                sexo,
+                profissao
+                
+            }
+            getvalue(result);
+        }
+        function getvalue (obj ){
+            // document.write(obj.nome)
+            // alert(obj.nome)
+            document.getElementById('teste').innerHTML = obj.nome
+        }
+       function dinam(){
+        let din = document.getElementById('nome').value;
+        document.getElementById('teste1').innerHTML = din
+       }
+
+    </script>
+</body>
+</html>

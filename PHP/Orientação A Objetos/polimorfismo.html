@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polimorfismo </title>
+    <script>
+        class Animal{
+            constructor( cor, tamanho, peso){
+                this.cor = ''
+                this.tamanho 
+                this.peso
+            }
+            dormir(){
+                document.writeln("dormindo<br>")
+            }
+        }
+        class Cachorro extends Animal{
+            constructor(){
+                super()
+                this.orelha = 'grandes'
+            }
+            tamanho = 30
+            correr(){
+                document.writeln("correndo<br>")
+            }
+            rosnar(){
+                document.writeln("rosnando<br>")
+            }
+            
+        }
+        class Passaro extends Animal{
+            constructor(bico, cor, tamanho, peso){
+                super(cor, tamanho, peso)
+                this.bico = 'curto'
+            }
+            voar(){
+                document.writeln("voando<br>")
+            }
+        }
+        class Papagaio extends Passaro{
+            constructor(sabeFalar, cor, tamanho, peso){
+                super('Medio', cor, tamanho, peso)
+                this.sabeFalar
+            }
+            falar(){
+                document.writeln("falar<br>")
+            }
+        }
+        class Avetruz extends Passaro{
+            constructor(){
+                super('Grande', 'branco e preto', 250 , 15000)
+            }
+            enterrarCabeca(){
+                document.writeln("Enterrar a cabeça<br>")
+            }
+            voar(){
+                document.writeln("Não sabe voar<br>")
+                return false
+            }
+
+        }
+
+        let papagaio = new Papagaio(true, 'Verde', 25, 350)
+        console.log(papagaio)
+        papagaio.voar()
+        let avetruz = new Avetruz()
+        avetruz.enterrarCabeca()
+        avetruz.voar()
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

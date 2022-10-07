@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcao_costrutora_encapsuladora</title>
+    <script>
+       let Carros = function() {
+            this.cor = 'black'
+            this.modelo = 'opala'
+            this.ano = 1969
+            this.velocidadeAtual = 0
+            this.velocidadeMaxima = 240
+            this.acelerar = function() {
+                let velocidade = this.getvelocidadeAtual() + 80
+                if (velocidade > this.velocidadeMaxima) {
+                    velocidade = this.velocidadeMaxima
+                } 
+                this.setvelocidadeAtual(velocidade)
+                
+                
+            }
+            this.getvelocidadeAtual = function() {
+                return this.velocidadeAtual
+            }
+            this.setvelocidadeAtual = function(velocidade){
+                this.velocidadeAtual = velocidade
+            }
+       }
+       let carro = new Carros();
+       document.write(`A velocidade atual é: ${carro.getvelocidadeAtual()}<br>`)
+       carro.acelerar()
+       document.write(`A velocidade atual é: ${carro.getvelocidadeAtual()}<br>`)
+       carro.acelerar()
+       document.write(`A velocidade atual é: ${carro.getvelocidadeAtual()}<br>`)
+       carro.acelerar()
+       document.write(`A velocidade atual é: ${carro.getvelocidadeAtual()}<br>`)
+       carro.acelerar()
+       document.write(`A velocidade atual é: ${carro.getvelocidadeAtual()}<br>`)
+       carro.acelerar()
+       
+       document.write(`A velocidade atual é: ${carro.getvelocidadeAtual()}<br>`)
+       
+       let Carros2 = function() {
+            var velocidadeMaxima = 280
+            var kmrodados = 1
+            this.cor = 'black'
+            this.modelo = 'vermelho'
+            this.ano = 1969
+            this.velocidadeAtual = 0
+            
+            this.acelerar = function() {
+                let velocidade = this.getvelocidadeAtual() + 50
+                if (velocidade > velocidadeMaxima) {
+                    velocidade = velocidadeMaxima
+                    
+                } 
+                this.setvelocidadeAtual(velocidade)
+                setkmrodado(1.08)
+                console.log(kmrodados)
+                
+            }
+            this.getvelocidadeAtual = function() {
+                return this.velocidadeAtual
+            }
+            this.setvelocidadeAtual = function(velocidade){
+                this.velocidadeAtual = velocidade
+            }
+            var setkmrodado = function(km){
+                kmrodados *=km
+            }
+       }
+       let carro2 = new Carros2();
+       document.write(`A velocidade atual é: ${carro2.getvelocidadeAtual()}<br>`)
+       carro2.acelerar()
+       document.write(`A velocidade atual é: ${carro2.getvelocidadeAtual()}<br>`)
+       carro2.acelerar()
+       document.write(`A velocidade atual é: ${carro2.getvelocidadeAtual()}<br>`)
+       carro2.acelerar()
+       document.write(`A velocidade atual é: ${carro2.getvelocidadeAtual()}<br>`)
+       carro2.acelerar()
+       document.write(`A velocidade atual é: ${carro2.getvelocidadeAtual()}<br>`)
+       carro2.acelerar()
+       document.write(`A velocidade atual é: ${carro2.getvelocidadeAtual()}<br>`)
+       carro2.acelerar()
+       document.write(`A velocidade atual é: ${carro2.getvelocidadeAtual()}<br>`)
+
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

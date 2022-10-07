@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread rest</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // contexto rest
+        function soma (...param){
+            let result = 0
+            
+            console.log(param)
+
+            param.forEach( v => result += v)
+
+            return result
+        }
+
+        console.log(soma(3, 8 ,7 ,9))
+        function multi (m , ...p){
+            let result = 0
+            
+            console.log(m)
+            console.log(p)
+
+            p.forEach( v => result += m*v)
+
+            return result
+        }
+        console.log(multi(5 , 7 , 65 , 32, 4 , 87 , -102))
+
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
