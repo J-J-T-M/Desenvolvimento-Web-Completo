@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="db_curso_web" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="tb_alunos">
+                CREATE TABLE `tb_alunos` (
+                  `id_aluno` int(11) DEFAULT NULL,
+                  `nome` varchar(255) DEFAULT NULL,
+                  `idade` int(11) DEFAULT NULL,
+                  `interesse` varchar(255) DEFAULT NULL,
+                  `email` varchar(255) DEFAULT NULL,
+                  `estado` varchar(255) DEFAULT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="tb_cursos">
+                CREATE TABLE `tb_cursos` (
+                  `id_cursos` int(11) NOT NULL,
+                  `imagem_cursos` varchar(100) NOT NULL,
+                  `nome_curso` char(50) NOT NULL,
+                  `resumo` text DEFAULT NULL,
+                  `data_cadastro` datetime NOT NULL,
+                  `ativo` tinyint(1) DEFAULT 1,
+                  `investimento` float(8,2) DEFAULT 0.00,
+                  `carga_horaria` int(5) DEFAULT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Banco de dados: 'db_curso_web'
+    -->
+    <database name="db_curso_web">
+        <!-- Tabela tb_alunos -->
+        <table name="tb_alunos">
+            <column name="id_aluno">1</column>
+            <column name="nome">Jorden</column>
+            <column name="idade">47</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">vel.mauris.Integer@nec.net</column>
+            <column name="estado">DF</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">2</column>
+            <column name="nome">Lacey</column>
+            <column name="idade">59</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">ligula.eu.enim@egetlaoreetposuere.com</column>
+            <column name="estado">SC</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">3</column>
+            <column name="nome">Lillith</column>
+            <column name="idade">48</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">Curabitur@atvelitCras.org</column>
+            <column name="estado">MA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">4</column>
+            <column name="nome">Zephania</column>
+            <column name="idade">63</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">erat.vitae@loremtristiquealiquet.net</column>
+            <column name="estado">RS</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">5</column>
+            <column name="nome">Scarlett</column>
+            <column name="idade">95</column>
+            <column name="interesse">Informática</column>
+            <column name="email">facilisis.Suspendisse.commodo@placeratCrasdictum.org</column>
+            <column name="estado">MS</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">6</column>
+            <column name="nome">Nash</column>
+            <column name="idade">39</column>
+            <column name="interesse">Música</column>
+            <column name="email">Aliquam@Maurisquisturpis.org</column>
+            <column name="estado">BA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">7</column>
+            <column name="nome">Indigo</column>
+            <column name="idade">62</column>
+            <column name="interesse">Informática</column>
+            <column name="email">mus.Proin@laoreet.co.uk</column>
+            <column name="estado">GO</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">8</column>
+            <column name="nome">Bernard</column>
+            <column name="idade">77</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">ut@Craspellentesque.net</column>
+            <column name="estado">PA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">9</column>
+            <column name="nome">Cheyenne</column>
+            <column name="idade">78</column>
+            <column name="interesse">Música</column>
+            <column name="email">vel.pede@liberoduinec.co.uk</column>
+            <column name="estado">PR</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">10</column>
+            <column name="nome">Nerea</column>
+            <column name="idade">88</column>
+            <column name="interesse">Música</column>
+            <column name="email">non@facilisisvitae.edu</column>
+            <column name="estado">PB</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">11</column>
+            <column name="nome">Lucius</column>
+            <column name="idade">57</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">eu.erat@interdum.ca</column>
+            <column name="estado">PE</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">12</column>
+            <column name="nome">Fallon</column>
+            <column name="idade">38</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">risus@Etiamimperdietdictum.net</column>
+            <column name="estado">MT</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">13</column>
+            <column name="nome">Steven</column>
+            <column name="idade">35</column>
+            <column name="interesse">Música</column>
+            <column name="email">tellus@netus.org</column>
+            <column name="estado">CE</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">14</column>
+            <column name="nome">Paul</column>
+            <column name="idade">37</column>
+            <column name="interesse">Música</column>
+            <column name="email">sollicitudin.adipiscing@magnaCras.edu</column>
+            <column name="estado">GO</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">15</column>
+            <column name="nome">Bradley</column>
+            <column name="idade">31</column>
+            <column name="interesse">Música</column>
+            <column name="email">massa.Vestibulum@vitaesemperegestas.com</column>
+            <column name="estado">AP</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">16</column>
+            <column name="nome">Jeanette</column>
+            <column name="idade">46</column>
+            <column name="interesse">Informática</column>
+            <column name="email">vitae@accumsannequeet.co.uk</column>
+            <column name="estado">MG</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">17</column>
+            <column name="nome">Craig</column>
+            <column name="idade">40</column>
+            <column name="interesse">Informática</column>
+            <column name="email">magna.et.ipsum@tellusid.edu</column>
+            <column name="estado">MS</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">18</column>
+            <column name="nome">Maia</column>
+            <column name="idade">94</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">ac@tempusnon.co.uk</column>
+            <column name="estado">PB</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">19</column>
+            <column name="nome">Harriet</column>
+            <column name="idade">16</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">ante.ipsum@maurissitamet.com</column>
+            <column name="estado">AL</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">20</column>
+            <column name="nome">Finn</column>
+            <column name="idade">99</column>
+            <column name="interesse">Informática</column>
+            <column name="email">metus.vitae@vitaerisusDuis.com</column>
+            <column name="estado">MT</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">21</column>
+            <column name="nome">Rafael</column>
+            <column name="idade">71</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">adipiscing.elit.Etiam@vel.edu</column>
+            <column name="estado">MG</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">22</column>
+            <column name="nome">Cynthia</column>
+            <column name="idade">85</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">Donec.nibh.Quisque@Sed.org</column>
+            <column name="estado">RN</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">23</column>
+            <column name="nome">Evelyn</column>
+            <column name="idade">13</column>
+            <column name="interesse">Informática</column>
+            <column name="email">lacus.Aliquam.rutrum@etrutrumeu.edu</column>
+            <column name="estado">MA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">24</column>
+            <column name="nome">Sybil</column>
+            <column name="idade">39</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">semper@nuncsed.com</column>
+            <column name="estado">ES</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">25</column>
+            <column name="nome">Uriel</column>
+            <column name="idade">10</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">semper.pretium.neque@eumetusIn.ca</column>
+            <column name="estado">PB</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">26</column>
+            <column name="nome">Dakota</column>
+            <column name="idade">99</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">ipsum@etrutrumnon.co.uk</column>
+            <column name="estado">PB</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">27</column>
+            <column name="nome">Stewart</column>
+            <column name="idade">31</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">natoque.penatibus.et@inhendrerit.org</column>
+            <column name="estado">CE</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">28</column>
+            <column name="nome">Cruz</column>
+            <column name="idade">96</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">Cum.sociis.natoque@elementumloremut.org</column>
+            <column name="estado">RS</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">29</column>
+            <column name="nome">Kadeem</column>
+            <column name="idade">57</column>
+            <column name="interesse">Informática</column>
+            <column name="email">consectetuer@faucibusleoin.net</column>
+            <column name="estado">MS</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">30</column>
+            <column name="nome">Wyatt</column>
+            <column name="idade">36</column>
+            <column name="interesse">Música</column>
+            <column name="email">feugiat.non@dolorsitamet.net</column>
+            <column name="estado">SC</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">31</column>
+            <column name="nome">Griffith</column>
+            <column name="idade">28</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">Lorem@elementumsem.com</column>
+            <column name="estado">RO</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">32</column>
+            <column name="nome">Yvette</column>
+            <column name="idade">39</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">mauris@dignissim.com</column>
+            <column name="estado">RO</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">33</column>
+            <column name="nome">Burton</column>
+            <column name="idade">14</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">leo.elementum.sem@arcuVestibulumante.edu</column>
+            <column name="estado">SC</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">34</column>
+            <column name="nome">Tatum</column>
+            <column name="idade">4</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">eget.lacus@nequeInornare.com</column>
+            <column name="estado">PA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">35</column>
+            <column name="nome">Graham</column>
+            <column name="idade">88</column>
+            <column name="interesse">Informática</column>
+            <column name="email">ac@necurna.com</column>
+            <column name="estado">ES</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">36</column>
+            <column name="nome">Aretha</column>
+            <column name="idade">37</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">malesuada.augue@Nunc.com</column>
+            <column name="estado">ES</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">37</column>
+            <column name="nome">Sloane</column>
+            <column name="idade">5</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">parturient@purusMaecenaslibero.net</column>
+            <column name="estado">CE</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">38</column>
+            <column name="nome">Uriel</column>
+            <column name="idade">81</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">Praesent.interdum@enimnon.net</column>
+            <column name="estado">AL</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">39</column>
+            <column name="nome">Cameran</column>
+            <column name="idade">61</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">sem.consequat@senectus.com</column>
+            <column name="estado">PR</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">40</column>
+            <column name="nome">Chiquita</column>
+            <column name="idade">8</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">nisl.Quisque@utodio.co.uk</column>
+            <column name="estado">MA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">41</column>
+            <column name="nome">Tanek</column>
+            <column name="idade">40</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">nonummy@lectusNullamsuscipit.org</column>
+            <column name="estado">AL</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">42</column>
+            <column name="nome">Bruno</column>
+            <column name="idade">3</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">semper.Nam@atpretium.ca</column>
+            <column name="estado">DF</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">43</column>
+            <column name="nome">Winter</column>
+            <column name="idade">14</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">Quisque.nonummy@dolorNulla.ca</column>
+            <column name="estado">RS</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">44</column>
+            <column name="nome">Jacob</column>
+            <column name="idade">82</column>
+            <column name="interesse">Música</column>
+            <column name="email">nec.eleifend.non@sapien.ca</column>
+            <column name="estado">RR</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">45</column>
+            <column name="nome">Kuame</column>
+            <column name="idade">98</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">placerat@ametorci.ca</column>
+            <column name="estado">PR</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">46</column>
+            <column name="nome">Orli</column>
+            <column name="idade">74</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">eu.erat.semper@dolorsitamet.co.uk</column>
+            <column name="estado">ES</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">47</column>
+            <column name="nome">Amber</column>
+            <column name="idade">24</column>
+            <column name="interesse">Informática</column>
+            <column name="email">eleifend.non@quamvelsapien.org</column>
+            <column name="estado">AL</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">48</column>
+            <column name="nome">Roary</column>
+            <column name="idade">77</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">quis.pede.Suspendisse@Duisa.com</column>
+            <column name="estado">SE</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">49</column>
+            <column name="nome">Octavius</column>
+            <column name="idade">28</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">euismod.in.dolor@posuere.edu</column>
+            <column name="estado">PA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">50</column>
+            <column name="nome">Isabella</column>
+            <column name="idade">54</column>
+            <column name="interesse">Informática</column>
+            <column name="email">eu@euarcuMorbi.ca</column>
+            <column name="estado">RR</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">51</column>
+            <column name="nome">Driscoll</column>
+            <column name="idade">70</column>
+            <column name="interesse">Informática</column>
+            <column name="email">sem@malesuada.com</column>
+            <column name="estado">SP</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">52</column>
+            <column name="nome">Brendan</column>
+            <column name="idade">45</column>
+            <column name="interesse">Informática</column>
+            <column name="email">arcu.et.pede@magna.com</column>
+            <column name="estado">SC</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">53</column>
+            <column name="nome">Quon</column>
+            <column name="idade">18</column>
+            <column name="interesse">Informática</column>
+            <column name="email">elit@adipiscingnon.org</column>
+            <column name="estado">AP</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">54</column>
+            <column name="nome">Rajah</column>
+            <column name="idade">48</column>
+            <column name="interesse">Informática</column>
+            <column name="email">magna.tellus@Quisquefringilla.org</column>
+            <column name="estado">RJ</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">55</column>
+            <column name="nome">Lewis</column>
+            <column name="idade">32</column>
+            <column name="interesse">Informática</column>
+            <column name="email">faucibus@vulputate.com</column>
+            <column name="estado">PA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">56</column>
+            <column name="nome">Ronan</column>
+            <column name="idade">34</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">tellus.non@eleifend.com</column>
+            <column name="estado">CE</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">57</column>
+            <column name="nome">Baxter</column>
+            <column name="idade">72</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">enim.sit@urnanec.ca</column>
+            <column name="estado">DF</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">58</column>
+            <column name="nome">Kyla</column>
+            <column name="idade">6</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">facilisis.eget@sociosquadlitora.net</column>
+            <column name="estado">AM</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">59</column>
+            <column name="nome">Ava</column>
+            <column name="idade">54</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">velit@acmattis.edu</column>
+            <column name="estado">RN</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">60</column>
+            <column name="nome">Leonard</column>
+            <column name="idade">59</column>
+            <column name="interesse">Música</column>
+            <column name="email">fermentum.arcu@consequatenim.ca</column>
+            <column name="estado">MS</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">61</column>
+            <column name="nome">Byron</column>
+            <column name="idade">17</column>
+            <column name="interesse">Música</column>
+            <column name="email">Pellentesque.habitant.morbi@sapienNunc.edu</column>
+            <column name="estado">MT</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">62</column>
+            <column name="nome">Roary</column>
+            <column name="idade">52</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">nec.eleifend.non@velvenenatis.org</column>
+            <column name="estado">GO</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">63</column>
+            <column name="nome">Amery</column>
+            <column name="idade">89</column>
+            <column name="interesse">Informática</column>
+            <column name="email">mauris.aliquam.eu@Proindolor.net</column>
+            <column name="estado">PA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">64</column>
+            <column name="nome">Adele</column>
+            <column name="idade">40</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">scelerisque@velvenenatisvel.com</column>
+            <column name="estado">RR</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">65</column>
+            <column name="nome">Ronan</column>
+            <column name="idade">14</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">posuere.cubilia@Donecnonjusto.co.uk</column>
+            <column name="estado">RJ</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">66</column>
+            <column name="nome">Marny</column>
+            <column name="idade">53</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">convallis.in.cursus@blanditatnisi.com</column>
+            <column name="estado">PA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">67</column>
+            <column name="nome">Camden</column>
+            <column name="idade">31</column>
+            <column name="interesse">Música</column>
+            <column name="email">magna@mauriseu.edu</column>
+            <column name="estado">RJ</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">68</column>
+            <column name="nome">Yoko</column>
+            <column name="idade">13</column>
+            <column name="interesse">Música</column>
+            <column name="email">dolor@vehiculaet.com</column>
+            <column name="estado">AM</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">69</column>
+            <column name="nome">Ina</column>
+            <column name="idade">71</column>
+            <column name="interesse">Informática</column>
+            <column name="email">gravida.sagittis@tempusscelerisquelorem.com</column>
+            <column name="estado">AL</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">70</column>
+            <column name="nome">Tyler</column>
+            <column name="idade">3</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">Proin.dolor.Nulla@nascetur.org</column>
+            <column name="estado">PI</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">71</column>
+            <column name="nome">Destiny</column>
+            <column name="idade">19</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">augue.id@elementum.edu</column>
+            <column name="estado">MG</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">72</column>
+            <column name="nome">Glenna</column>
+            <column name="idade">82</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">dui@interdumligula.ca</column>
+            <column name="estado">AP</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">73</column>
+            <column name="nome">Buffy</column>
+            <column name="idade">55</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">dictum.eu@placeratvelitQuisque.net</column>
+            <column name="estado">MA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">74</column>
+            <column name="nome">Hashim</column>
+            <column name="idade">27</column>
+            <column name="interesse">Música</column>
+            <column name="email">est.congue@enim.org</column>
+            <column name="estado">MA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">75</column>
+            <column name="nome">Hiram</column>
+            <column name="idade">67</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">nunc.sit.amet@nibhPhasellus.co.uk</column>
+            <column name="estado">RN</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">76</column>
+            <column name="nome">Kenneth</column>
+            <column name="idade">50</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">a.nunc.In@Integermollis.edu</column>
+            <column name="estado">AL</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">77</column>
+            <column name="nome">Ariel</column>
+            <column name="idade">9</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">Etiam.vestibulum.massa@egestas.edu</column>
+            <column name="estado">PA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">78</column>
+            <column name="nome">Barrett</column>
+            <column name="idade">24</column>
+            <column name="interesse">Informática</column>
+            <column name="email">fringilla.mi@liberoIntegerin.com</column>
+            <column name="estado">PA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">79</column>
+            <column name="nome">Kato</column>
+            <column name="idade">25</column>
+            <column name="interesse">Música</column>
+            <column name="email">cursus.in.hendrerit@eu.org</column>
+            <column name="estado">BA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">80</column>
+            <column name="nome">Lance</column>
+            <column name="idade">50</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">Nullam@necurna.net</column>
+            <column name="estado">CE</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">81</column>
+            <column name="nome">Porter</column>
+            <column name="idade">50</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">ultrices.mauris@nequesed.org</column>
+            <column name="estado">PA</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">82</column>
+            <column name="nome">Zeus</column>
+            <column name="idade">26</column>
+            <column name="interesse">Informática</column>
+            <column name="email">hymenaeos@Integereu.net</column>
+            <column name="estado">RR</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">83</column>
+            <column name="nome">Oleg</column>
+            <column name="idade">36</column>
+            <column name="interesse">Informática</column>
+            <column name="email">Nam@morbitristiquesenectus.ca</column>
+            <column name="estado">AL</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">84</column>
+            <column name="nome">Erin</column>
+            <column name="idade">25</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">ligula@Nullam.edu</column>
+            <column name="estado">TO</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">85</column>
+            <column name="nome">Wade</column>
+            <column name="idade">61</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">odio.Aliquam.vulputate@egestas.edu</column>
+            <column name="estado">MS</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">86</column>
+            <column name="nome">Ross</column>
+            <column name="idade">92</column>
+            <column name="interesse">Música</column>
+            <column name="email">tortor.at.risus@ac.edu</column>
+            <column name="estado">DF</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">87</column>
+            <column name="nome">Martina</column>
+            <column name="idade">24</column>
+            <column name="interesse">Música</column>
+            <column name="email">Cras@lacusAliquam.com</column>
+            <column name="estado">MS</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">88</column>
+            <column name="nome">Rowan</column>
+            <column name="idade">75</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">erat@afelisullamcorper.com</column>
+            <column name="estado">RO</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">89</column>
+            <column name="nome">Aristotle</column>
+            <column name="idade">22</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">at.auctor@Utnecurna.net</column>
+            <column name="estado">PI</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">90</column>
+            <column name="nome">Bernard</column>
+            <column name="idade">24</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">placerat.orci.lacus@vitaesemperegestas.edu</column>
+            <column name="estado">RJ</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">91</column>
+            <column name="nome">Teegan</column>
+            <column name="idade">9</column>
+            <column name="interesse">Música</column>
+            <column name="email">id@Fuscealiquam.co.uk</column>
+            <column name="estado">DF</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">92</column>
+            <column name="nome">Graiden</column>
+            <column name="idade">7</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">ante.dictum@nibhAliquam.co.uk</column>
+            <column name="estado">AL</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">93</column>
+            <column name="nome">Alec</column>
+            <column name="idade">50</column>
+            <column name="interesse">Música</column>
+            <column name="email">vestibulum.neque.sed@nislQuisque.co.uk</column>
+            <column name="estado">PE</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">94</column>
+            <column name="nome">Savannah</column>
+            <column name="idade">61</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">odio.a.purus@nequeSedeget.co.uk</column>
+            <column name="estado">ES</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">95</column>
+            <column name="nome">Rafael</column>
+            <column name="idade">45</column>
+            <column name="interesse">Informática</column>
+            <column name="email">a@dolorsit.net</column>
+            <column name="estado">PB</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">96</column>
+            <column name="nome">Clementine</column>
+            <column name="idade">32</column>
+            <column name="interesse">Saúde</column>
+            <column name="email">dictum@Aliquamerat.edu</column>
+            <column name="estado">RS</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">97</column>
+            <column name="nome">Tasha</column>
+            <column name="idade">53</column>
+            <column name="interesse">Esporte</column>
+            <column name="email">in@justoProin.co.uk</column>
+            <column name="estado">AC</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">98</column>
+            <column name="nome">Hector</column>
+            <column name="idade">83</column>
+            <column name="interesse">Música</column>
+            <column name="email">Class.aptent@et.co.uk</column>
+            <column name="estado">AM</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">99</column>
+            <column name="nome">Tara</column>
+            <column name="idade">95</column>
+            <column name="interesse">Jogos</column>
+            <column name="email">Donec.porttitor.tellus@nonfeugiat.co.uk</column>
+            <column name="estado">DF</column>
+        </table>
+        <table name="tb_alunos">
+            <column name="id_aluno">100</column>
+            <column name="nome">Charissa</column>
+            <column name="idade">50</column>
+            <column name="interesse">Informática</column>
+            <column name="email">orci@elementumduiquis.ca</column>
+            <column name="estado">AP</column>
+        </table>
+        <!-- Tabela tb_cursos -->
+        <table name="tb_cursos">
+            <column name="id_cursos">1</column>
+            <column name="imagem_cursos">java.png</column>
+            <column name="nome_curso">Java completo</column>
+            <column name="resumo">Java completo com a sua framework Spring para back end e Angular para font end</column>
+            <column name="data_cadastro">2022-10-13 09:55:55</column>
+            <column name="ativo">1</column>
+            <column name="investimento">997.99</column>
+            <column name="carga_horaria">1024</column>
+        </table>
+        <table name="tb_cursos">
+            <column name="id_cursos">1</column>
+            <column name="imagem_cursos">php.png</column>
+            <column name="nome_curso">PHP Completo</column>
+            <column name="resumo">PHP completo com a sua framework Laravel para back end e VIM para font end</column>
+            <column name="data_cadastro">2022-10-13 10:17:55</column>
+            <column name="ativo">1</column>
+            <column name="investimento">497.99</column>
+            <column name="carga_horaria">936</column>
+        </table>
+        <!-- SELECT *FROM tb_alunos WHERE interesse = 'jogos'; -->
+        <!-- SELECT *FROM tb_alunos WHERE idade BETWEEN  25 AND 54; -->
+        <!-- SELECT *FROM tb_alunos WHERE interesse IN('jogos' , 'musica', 'informatica'); -->
+    </database>
+</pma_xml_export>

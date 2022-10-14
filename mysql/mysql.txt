@@ -1,0 +1,509 @@
+CREATE DATABASE nome_banco; // CRIAR BANCO DE DADOS
+DROP DATABASE nome_banco; // APAGAR O BANCO DE DADOS
+tipos de dados 
+    campos textos:
+        text (tam variavel armazena grande quant)
+        varchar (tam variavel armazena grande quant)
+        Char (tam fixo armazena de 0 á 255 caracteres)
+    campos numericos:
+        Int 
+        Float
+    campos de data e hora:
+        Date (data no formato YYYY/mm/dd)
+        Time (hora)
+        Datetime( os dois no mesmo campo)
+
+CREATE TABLE tb_nometabela(
+	id_curso int not null,
+    imagem_curso varchar(100) not null,
+    nome_curso char(50) not null,
+    resumo text null,
+    data_cadastro datetime not null,
+    ativo boolean DEFAULT true,
+    investimento float (8,2) default 0
+); // exemplo para criar tabela
+
+DROP TABLE tb_cursos; // apagar a tabela
+RENAME TABLE <nome_atual> to <nome_novo>; //para renomear a tabela
+ALTER TABLE nome_tabela
+                            ADD COLUMN nome_coluna; // nova coluna na tabela
+                            CHANGE nome_coluna "nome_coluna tipo()";// permite alterar o nome da coluna ou o seu tipo ops sem as aspas
+                            DROP nome_coluna;// apagar uma coluna na tabela
+
+INSERT INTO nome_tabela (nome_coluna, ...) VALUES (valores, 'valores'); 
+INSERT INTO tb_cursos (id_cursos, imagem_cursos, nome_curso, resumo, data_cadastro, ativo, investimento, carga_horaria) values (01,'java.png','Java completo', 'Java completo com a sua framework Spring para back end e Angular para font end','2022-10-13 09:55:55', 1, 997.99, 1024);//exemplo
+
+SELECT <coluna> FROM <tabela>
+SELECT id_cursos, imagem_cursos, nome_curso, resumo, data_cadastro, ativo, investimento, carga_horaria FROM tb_cursos;//exemplo
+SELECT * FROM <tabela>; // selecionar toda a tabela 
+
+SELECT <coluna> FROM <tabela> WHERE  a < b; // selecionar toda a tabela com essa condição
+
+SELECT <coluna> FROM <tabela> WHERE coluna BETWEEN  a AND b; // selecionar toda a tabela com esse intervalo de condição
+SELECT <coluna> FROM <tabela> WHERE coluna IN ('a','b','d'); // selecionar toda a tabela somente com essas condições funciona como um múltiplo OR
+SELECT <coluna> FROM <tabela> WHERE coluna Not IN ('a','b','d'); // selecionar toda a tabela somente as quais não tem essas condições funciona como um múltiplo OR
+SELECT <coluna> FROM <tabela> WHERE coluna LIKE  '%carácter'; // selecionar toda a tabela que possuem esse conjunto de carácter e pode haver a existência de qualquer outro conjunto de carácteres no texto (pode ser também %carácter%)
+SELECT <coluna> FROM <tabela> WHERE coluna LIKE  '_carácter'; // selecionar toda a tabela que possuem esse conjunto de carácter e pode haver a existência de um ou mais carácteres no texto (pode ser também _carácter_ ou __caracter)
+SELECT <coluna> FROM <tabela> WHERE coluna LIKE  '%carácter__'; // utilizando os dois operadores 
+SELECT <coluna> FROM <tabela> WHERE a < b ORDER BY coluna ASC; // selecionar toda a tabela com ordem crescente 
+SELECT <coluna> FROM <tabela> WHERE a < b ORDER BY coluna DESC; // selecionar toda a tabela decrescente
+SELECT * FROM <tabela> LIMIT 25; // selecionar toda a tabela com um limite de exposição  
+SELECT * FROM <tabela> LIMIT 25 OFFSET 0; // selecionar toda a tabela com um limite de exposição a partir do 0
+
+TRUNCATE <tabela> // apagar todos os dados da tabela 
+
+SELECT MIN(coluna) FROM <tabela>  WHERE; //retorna o menor valor de todos os registro com base em uma coluna
+SELECT MAX(coluna) FROM <tabela>  WHERE; //retorna o maior valor de todos os registro com base em uma coluna
+SELECT AVG(coluna) FROM <tabela>  WHERE; //retorna o media de todos os registro com base em uma coluna
+SELECT SUM(coluna) FROM <tabela>  WHERE; //retorna a soma de todos os registro com base em uma coluna
+SELECT COUNT(*) FROM <tabela>  WHERE; //retorna a quantidade de todos os registro com base em uma tabela
+
+SELECT (coluna) FROM <tabela> WHERE <>filtro(s) GROUP BY <agrupamento> ORDER BY <ordenação> LIMIT<offset>, <limit>; //agrupa os registros com bases em uma ou mais colunas cujos valores sejam iguais. permite realizar funções de agregação em cada subconjunto agrupados de registros
+SELECT (coluna) FROM <tabela> WHERE <>filtro(s) GROUP BY <agrupamento> HAVING <filtro(s) sobre agrupamento> ORDER BY <ordenação> LIMIT<offset>, <limit>; //Filtro realizado sobre o resultado dos agrupamentos (GROUP BY) 
+
+UPDATE <tabela> SET <coluna> = <valor>, <coluna> = <valor> WHERE <filtro(s)>; // atualizar registro 
+DELETE FROM <tabela> WHERE <filtro(s)>; // apagar registro
+
+FROM <tabela1> LEFT JOIN <tabela2> ON <tabela1>.<coluna> = <tabela2>.<coluna>; //Resulta em uma tabela que exibe somente os itens da tabela da esquerda, incluindo os itens em interseção com a tabela direita. Contudo, exclui da relação o resto da tabela da direita.
+FROM <tabela1> RIGHT JOIN <tabela2> ON <tabela1>.<coluna> = <tabela2>.<coluna>;  //Resulta em uma tabela que exibe somente os itens da tabela da direita, incluindo os itens em interseção com a tabela esquerda. Contudo, exclui da relação o resto da tabela da esquerda.
+FROM <tabela1> INNER JOIN <tabela2> ON <tabela1> = <tabela2>; // Resulta em uma tabela que traz os valores que estão em ambas as tabelas iniciais.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
