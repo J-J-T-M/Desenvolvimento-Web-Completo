@@ -1,0 +1,103 @@
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Catálogo de filmes</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="xmltojson.js"></script>
+		<script>
+			function getFilms() {
+				let xmlHttp = new XMLHttpRequest();
+				xmlHttp.open('GET', 'http://localhost/web/Desenvolvimento-Web-Completo/AJAX/filmes.json')
+
+				xmlHttp.onreadystatechange = () => {
+					if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+						let JSONFilmes = xmlHttp.responseText
+						
+						let objJSONFilms = JSON.parse(JSONFilmes)
+
+						for (let i in objJSONFilms.filmes) {
+
+							let item = objJSONFilms.filmes[i]
+
+							let divRow = document.createElement('div')
+							divRow.className = 'row'
+
+							let divCol = document.createElement('div')
+							divRow.className = 'col'
+
+							let p1 = document.createElement('p')
+							p1.innerHTML = '<strong>Título:</strong> ' + item.titulo
+
+							let p2 = document.createElement('p')
+							p2.innerHTML = '<strong>Resumo:</strong> ' + item.resumo
+							
+							let genre = ''
+
+							for (let g in item.generos){
+								if(genre) genre += ', '
+								genre += item.generos[g].genero
+							}
+
+							let p3 = document.createElement('p')
+							p3.innerHTML = '<strong>Gênero:</strong> ' + genre
+
+							let cast = ''
+
+							for (let e in item.elenco){
+								if(cast) cast += ', '
+								cast += item.elenco[e].ator
+							}
+
+							let p4 = document.createElement('p')
+							p4.innerHTML = '<strong>Elenco:</strong> ' + cast
+
+							let p5 = document.createElement('p')
+							p5.innerHTML = '<strong>Data de lançamento:</strong> ' + item.dataLancamento.data + ' (' + item.dataLancamento.pais +')'
+							
+							let hr = document.createElement('hr')
+
+							divRow.appendChild(divCol)
+
+							divCol.appendChild(p1)
+							divCol.appendChild(p2)
+							divCol.appendChild(p3)
+							divCol.appendChild(p4)
+							divCol.appendChild(p5)
+							divCol.appendChild(hr)
+
+							document.getElementById('list').appendChild(divRow)
+
+						}
+
+						
+					}
+
+					if(xmlHttp.readyState == 4 && xmlHttp.status == 404) {
+						window.location.href = 'erro404.html' ;
+					}
+				}
+
+				xmlHttp.send()
+			}
+		</script>
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-light bg-light mb-4">
+			<div class="container">
+				<div class="navbar-brand mb-0 h1">
+					<h3>Catálogo de filmes</h3>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container" id="list">
+			<div class="row mb-5">
+				<div class="col">
+					<button type="button" class="btn btn-success" onclick="getFilms()">Listar filmes</button>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

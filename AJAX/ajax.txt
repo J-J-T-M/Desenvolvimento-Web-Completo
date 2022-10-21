@@ -1,0 +1,19 @@
+let ajax = new XMLHttpRequest(); //obj para configurar a url e disparar requisições  
+ajax.send(); // envia o request para o servidor 
+estados de uma requisição
+ajax.readyState // para saber qual dos 5 state ela ta
+0: request not initialized (requisições não inicializada)
+1: server connection established (conexão estabelecida com servidor)
+2: request received (requisição recebida)
+3: processing request (processando requisição)
+4: request finished and response is ready (requisições finalizadas)
+ajax.onreadystatechange = ( ) => logica para ficar olhando o progresso do request
+
+request status code
+
+Informational responses (100–199)
+Successful responses (200–299)
+Redirection messages (300–399)
+Client error responses (400–499)
+Server error responses (500–599)
+ajax.status
