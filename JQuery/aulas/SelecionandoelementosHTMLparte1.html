@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JQuery</title>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <!-- <script src="../jquery/jquery-3.6.1.min.js"></script>  -->
+    </head>
+    <body style="background: rgb(22, 19, 19); color: rgb(41, 244, 0);">
+        <h1 class="diversos2">Selecionando elementos parte 1</h1>
+
+        <div class="exemplo1">Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+
+        <ul class="lista1">
+            <li class="exemplo1">Menu 1 -- Item 1</li>
+            <li>Menu 1 -- Item 2</li>
+            <li>Menu 1 -- Item 3</li>
+        </ul>
+
+        <input class="exemplo1" type="text" placeholder="input 1" />
+        <input type="text" placeholder="input 2" />
+        <input type="text" placeholder="input 3" />
+
+        <ul class="lista2">
+            <li class="exemplo2">Menu 1 - Item 1</li>
+            <li class="exemplo2">Menu 1 - Item 2</li>
+            <li class="exemplo2">Menu 1 - Item 3</li>
+        </ul>
+
+        <ul class="lista1">
+            <li class="exemplo2">Menu 1 - Item 1</li>
+            <li class="exemplo2">Menu 1 - Item 2</li>
+            <li class="exemplo2">Menu 1 - Item 3</li>
+        </ul>
+    </body>
+    <script>
+        // combinação de seletores
+
+            // selecionar elementos por classe de tag especificas 
+            
+            console.log("selecionar elementos por classe de tag especificas ")
+            console.log($('div.exemplo1'))
+            console.log('------------------------------------------------------')
+
+            // selecionar elementos por classe de classe especificas 
+            
+            console.log("selecionar elementos por classe de classe especificas ")
+            console.log($('.lista2 .exemplo2' ))
+            console.log('------------------------------------------------------')
+    
+            // Atuação sobre o array de retorno dos elementos selecionados
+            
+            console.log("Atuação sobre o array de retorno dos elementos selecionados")
+            console.log($('ul .exemplo2' ))
+            console.log('------------------------------------------------------')
+            console.log(' primeiro elemento ') 
+            console.log( $('ul .exemplo2:first '))
+            console.log("///////////////////////")
+            console.log(' elementos pares') 
+            console.log( $('ul .exemplo2:even '))
+            console.log("///////////////////////")
+            console.log(' elementos impares') 
+            console.log( $('ul .exemplo2:odd '))
+            console.log("///////////////////////")
+            console.log(' ultimo elemento ') 
+            console.log( $('ul .exemplo2:last '))
+            console.log("///////////////////////")
+
+    </script>
+</html>
