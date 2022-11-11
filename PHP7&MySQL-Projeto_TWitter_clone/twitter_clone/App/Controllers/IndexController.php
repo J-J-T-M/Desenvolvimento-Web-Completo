@@ -12,6 +12,7 @@
     {
         public function index()
         {
+            $this->view->login = isset($_GET['login']) ? $_GET['login'] :'';
             $this->render('index');
            
         }
@@ -37,7 +38,7 @@
 
             $user->__set('name',$_POST['name']);
             $user->__set('email',$_POST['email']);
-            $user->__set('password',$_POST['password']);
+            $user->__set('password',md5($_POST['password']));// md5 para criptografar 
             
             // sucesso
             if($user->validateRegistration() && count($user->userByEmail()) == 0)

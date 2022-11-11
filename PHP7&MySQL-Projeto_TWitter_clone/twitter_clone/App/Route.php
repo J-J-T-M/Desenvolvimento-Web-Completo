@@ -32,13 +32,32 @@
 
             $routes['logoff'] = array(
                 'route' => '/logoff',
-                'controller' => 'indexController',
-                'action' => 'index'
+                'controller' => 'AuthController',
+                'action' => 'logoff'
             );
             $routes['timeline'] = array(
                 'route' => '/timeline',
-                'controller' => 'indexController',
+                'controller' => 'AppController',
                 'action' => 'timeline'
+            );
+            $routes['tweet'] = array(
+                'route' => '/tweet',
+                'controller' => 'AppController',
+                'action' => 'tweet'
+            );$routes['deleteTweet'] = array(
+                'route' => '/deleteTweet',
+                'controller' => 'AppController',
+                'action' => 'deleteTweet'
+            );
+            $routes['whoToFollow'] = array(
+                'route' => '/whoToFollow',
+                'controller' => 'AppController',
+                'action' => 'whoToFollow'
+            );
+            $routes['action'] = array(
+                'route' => '/action',
+                'controller' => 'AppController',
+                'action' => 'action'
             );
     
             $this->setRoutes($routes);

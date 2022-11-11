@@ -11,38 +11,31 @@
         {
             $user = Container::getModel("User");
             $user->__set('email',$_POST['email']);
-            $user->__set('password',$_POST['password']);
+            $user->__set('password',md5($_POST['password']));
            
             $return = $user->authenticate();
            
             if(!empty($user->__get('id')) && !empty($user->__get('name')))
-// 
-// 
-// 
-// 
-// 
-// 
-//                  ERRO AQUI 
-// 
-//                  Warning: Trying to access array offset on value of type bool in 
-// 
-// 
-//                  COMO RESOLVER NO PHP 8 
-// 
-// 
-//             
+           
             {
-              echo "autenticado <pre>";
-              print_r($user);
-          echo "</pre"; 
+              session_start();
+              $_SESSION['id'] = $user->__get('id');
+              $_SESSION['name'] = $user->__get('name'); 
+
+              header("location: timeline");
             }
             else
             {
-                echo "não autenticado <pre>";
-                    print_r($user);
-                echo "</pre";  
+                header("location: /?login=erro");  
             }
 
+        }
+
+        public function logoff ()
+        {
+            session_start();
+            session_destroy();
+            header("location: /");
         }
 
 
