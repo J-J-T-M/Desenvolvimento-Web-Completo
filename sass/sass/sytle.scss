@@ -1,0 +1,80 @@
+$colorTitle: rgb(9, 255, 0);
+$sizeTitle: 62px;
+#conteudo {
+    background:green;
+    padding: 15px;
+    
+    h1{
+        color: $colorTitle;
+        font-size: $sizeTitle;
+    }
+    a {
+        color: rgb(0, 24, 245);
+         text-decoration: none;
+        &:hover{
+            color: rgb(241, 13, 211);
+            font-size: 600px;
+           
+        }
+    }
+}
+$classe: blue ;
+$color: color;
+.#{$classe}{
+    #{$color}:$classe;
+}
+/* for // through or to*/
+@for $i from 1 through 3 {
+    .item-#{$i} {
+        background: green;
+        margin-bottom: 2px;
+    }
+}
+
+/*while*/
+$count: 1;
+@while $count < 5 {
+     .item-#{$count} {
+        background: orange;
+        margin-bottom: 2px;
+    }
+    $count: $count + 1;
+}
+
+/*each*/
+$list: green, yellow, red;
+$count: 1;
+@each $cor in $list{
+     .item-#{$count} {
+        background: $cor;
+        margin-bottom: 2px;
+    }
+    $count: $count + 1;
+}
+
+/*funçoes*/
+$total: 12;
+@function largura_coluna($coluna){
+    @return percentage($coluna/$total);
+}
+
+$resul: largura_coluna(1);
+/*  
+#{$resul}
+*/
+@for $i from 1 through $total {
+    .col-#{$i} {
+        width: largura_coluna($i);
+        background: green;
+    }
+}
+/*
+Outras Funções 
+mix(green,orange,50%)
+darken(orange,50%)
+lighten(orange,40%)
+*/
+.alerta {
+  background: darken(orange,40%);
+  color: yellow;
+}     
