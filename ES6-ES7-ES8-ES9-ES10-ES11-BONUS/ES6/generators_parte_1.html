@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generators</title>
+    <script>
+        function* testeGenerators ()
+        {
+            console.log("Teste 1")
+            yield console.log("Teste 2") // executa tudo antes até chegar nela
+            console.log("Teste 3")
+            return "Teste 4"
+
+        }
+        
+        let myGenerators = testeGenerators()  // ele recebe o obg generator
+
+        console.log(myGenerators)
+
+        myGenerators.next()
+
+        console.log("----------------------")
+
+        myGenerators.next()
+
+        console.log(myGenerators.next())
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

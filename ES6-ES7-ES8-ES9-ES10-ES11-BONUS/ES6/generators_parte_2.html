@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generators</title>
+    <script>
+        
+        function* conversar()
+        {
+            // escopo próprio
+            // 1 bloco
+            let opcao = yield " E ai, tudo bem?"
+            
+            // o parâmetro enviado no next 
+            // 2 bloco
+            if(opcao == 'sim' || opcao == 'SIM') 
+            {
+                yield " Ótimo, fico feliz!" 
+
+                opcao = yield " Como eu posso te ajudar? Quer uma piada para começar?"
+                
+                if(opcao == 'sim' || opcao == 'SIM') 
+                {
+                    fetch('dados/piadas.json')
+                        .then(resposta => resposta.json())
+                        .then(piadas => {
+                            let number = Math.floor(Math.random() * 10 )
+                            let piada = piadas[number]
+                            console.log(piada.piada);
+                            setTimeout(() => {
+                                console.log(piada.resposta);
+                                console.log("hahahha muito boa né!");
+                               
+                            }, 4000);
+                        }) 
+                        yield " Digite 1 para compras, 2 para vendas ou 3 para falar com um atendente"
+                }
+                else
+                {
+                    yield " Digite 1 para compras, 2 para vendas ou 3 para falar com um atendente"
+                }
+            }
+            else
+            {
+                yield " Respire fundo e tenha paciência"  
+                yield " Digite 1 para compras, 2 para vendas ou 3 para falar com um atendente"
+            } 
+
+            return "Atentimento finalizado!"
+        }
+
+        let conversa = conversar(); // obj iterator
+
+        function acao()
+        {
+        
+            let resposta = document.getElementById('resposta').value
+
+            let interacao = conversa.next(resposta)//
+
+            console.log(interacao)
+
+            if(interacao.done)
+            {
+                document.getElementById('teste').style.display = 'none'
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <div id="teste">
+        <button type="button" onclick="acao()">Avançar</button>
+        Resposta: <input type="text" id="resposta">
+    </div>
+    
+</body>
+</html>
